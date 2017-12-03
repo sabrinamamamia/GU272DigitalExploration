@@ -1,0 +1,34 @@
+body {
+  text-align: center;
+}
+
+.person rect {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1px;
+}
+
+.person {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  font: 11px sans-serif;
+  cursor: pointer;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+circle {
+  fill: lightblue;
+  stroke: gray;
+}
+
+text {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  font: 11px sans-serif;
+  cursor: pointer;
+}
