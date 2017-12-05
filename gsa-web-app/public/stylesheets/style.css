@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+table {
+    border-spacing: 5px;
+    border: 1px solid #8e9f9f;
+}
+th, td {
+	padding: 5px;	
+	border: 1px solid #8e9f9f;
+}
