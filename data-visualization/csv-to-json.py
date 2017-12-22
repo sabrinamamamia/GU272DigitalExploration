@@ -31,15 +31,16 @@ for row in fileReader:
 		"children": []
 	}
 
-	# If family key == H (indicating head of family), add to 
-	# parent dictionary (key: family id, value: slave id). 
-	# Else if family key == F (family member), set object's parent 
-	# variable and append family member's id to parent's list of children
+
 	for key in row[1].split("; "):
 		if key == '':
 			continue
+		# Family key 'H0' indicates head of family 0. Add slave to  
+		# parent dictionary (key: family id, value: slave id)
 		elif key[0] == 'H':
 			parentDict[key[1]] = row[0];
+		# Family key 'FO' indicates member of family 0. Set object's parent 
+		# variable and append object's id to its parent's list of children
 		elif key[0] == 'F':
 			slaveDict[int(row[0])]["parent"] = int(parentDict[key[1]])
 			slaveDict[int(parentDict[key[1]])]["children"].append(int(row[0]))
