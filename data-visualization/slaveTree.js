@@ -7,13 +7,13 @@ var boxWidth = 150,
     boxHeight = 40;
 
 // Setup zoom and pan
-var zoom = d3.behavior.zoom()
-  .scaleExtent([.1,1])
-  .on('zoom', function(){
-    svg.attr("transform", "translate(" + d3.event.translate + ") scale(" + d3.event.scale + ")");
-  })
-  // Offset so that first pan and zoom does not jump back to the origin
-  .translate([150, 200]);
+// var zoom = d3.behavior.zoom()
+//   .scaleExtent([.1,1])
+//   .on('zoom', function(){
+//     svg.attr("transform", "translate(" + d3.event.translate + ") scale(" + d3.event.scale + ")");
+//   })
+//   // Offset so that first pan and zoom does not jump back to the origin
+//   .translate([150, 200]);
 
 var svg = d3.select("body")	
 			.append("svg")

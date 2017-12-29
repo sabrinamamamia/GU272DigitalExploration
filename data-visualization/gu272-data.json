@@ -977,7 +977,10 @@
   "gender": "female", 
   "age": "60", 
   "birthdate": "1778", 
-  "children": [], 
+  "children": [
+    49, 
+    50
+  ], 
   "buyer_name": "", 
   "long": "-76.7981457", 
   "full_name": "Nelly", 
@@ -998,8 +1001,6 @@
   "age": "40", 
   "birthdate": "1798", 
   "children": [
-    49, 
-    50, 
     53
   ], 
   "buyer_name": "Henry Johnson", 
@@ -1014,7 +1015,7 @@
 {
   "first_name": "xNelly", 
   "last_name": "", 
-  "parent": 48, 
+  "parent": 47, 
   "ship": "", 
   "farm_name": "White Marsh", 
   "age_approx": "", 
@@ -1034,7 +1035,7 @@
 {
   "first_name": "Kitty", 
   "last_name": "", 
-  "parent": 48, 
+  "parent": 47, 
   "ship": "Ship 3", 
   "farm_name": "White Marsh", 
   "age_approx": "", 
@@ -1542,11 +1543,7 @@
   "gender": "female", 
   "age": "60", 
   "birthdate": "1778", 
-  "children": [
-    76, 
-    77, 
-    78
-  ], 
+  "children": [], 
   "buyer_name": "Henry Johnson", 
   "long": "-76.7981457", 
   "full_name": "Margery", 
@@ -1579,7 +1576,7 @@
 {
   "first_name": "Minty", 
   "last_name": "", 
-  "parent": 74, 
+  "parent": null, 
   "ship": "Ship 3", 
   "farm_name": "White Marsh", 
   "age_approx": "", 
@@ -1599,7 +1596,7 @@
 {
   "first_name": "Nancy ", 
   "last_name": "", 
-  "parent": 74, 
+  "parent": null, 
   "ship": "Ship 3", 
   "farm_name": "White Marsh", 
   "age_approx": "", 
@@ -1619,7 +1616,7 @@
 {
   "first_name": "Mary", 
   "last_name": "", 
-  "parent": 74, 
+  "parent": null, 
   "ship": "Ship 3", 
   "farm_name": "White Marsh", 
   "age_approx": "", 
@@ -2251,7 +2248,12 @@
   "gender": "female", 
   "age": "51", 
   "birthdate": "1787", 
-  "children": [], 
+  "children": [
+    259, 
+    260, 
+    261, 
+    262
+  ], 
   "buyer_name": "Jesse Batey", 
   "long": "-77.023702", 
   "full_name": "Anny", 
@@ -2271,7 +2273,10 @@
   "gender": "female", 
   "age": "25", 
   "birthdate": "1813", 
-  "children": [], 
+  "children": [
+    263, 
+    264
+  ], 
   "buyer_name": "Jesse Batey", 
   "long": "-77.023702", 
   "full_name": "Betsy", 
@@ -2291,7 +2296,11 @@
   "gender": "female", 
   "age": "30", 
   "birthdate": "1808", 
-  "children": [], 
+  "children": [
+    265, 
+    266, 
+    267
+  ], 
   "buyer_name": "Henry Johnson", 
   "long": "-77.023702", 
   "full_name": "Matilida", 
@@ -2311,7 +2320,10 @@
   "gender": "female", 
   "age": "50", 
   "birthdate": "1788", 
-  "children": [], 
+  "children": [
+    268, 
+    269
+  ], 
   "buyer_name": "Jesse Batey", 
   "long": "-77.023702", 
   "full_name": "Kitty", 
@@ -2331,7 +2343,9 @@
   "gender": "female", 
   "age": "26", 
   "birthdate": "1812", 
-  "children": [], 
+  "children": [
+    270
+  ], 
   "buyer_name": "Henry Johnson", 
   "long": "-77.023702", 
   "full_name": "Margaret", 
@@ -2353,12 +2367,10 @@
   "birthdate": "1806", 
   "children": [
     115, 
-    116, 
-    117, 
-    118, 
-    119, 
-    120, 
-    121
+    271, 
+    272, 
+    273, 
+    274
   ], 
   "buyer_name": "Henry Johnson", 
   "long": "-77.023702", 
@@ -2392,7 +2404,7 @@
 {
   "first_name": "xHenny", 
   "last_name": "", 
-  "parent": 114, 
+  "parent": null, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "", 
@@ -2412,7 +2424,7 @@
 {
   "first_name": "Louisa", 
   "last_name": "", 
-  "parent": 114, 
+  "parent": null, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "", 
@@ -2432,7 +2444,7 @@
 {
   "first_name": "xTeresia", 
   "last_name": "", 
-  "parent": 114, 
+  "parent": null, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "", 
@@ -2452,7 +2464,7 @@
 {
   "first_name": "xMary", 
   "last_name": "", 
-  "parent": 114, 
+  "parent": null, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "", 
@@ -2472,7 +2484,7 @@
 {
   "first_name": "Mary ", 
   "last_name": "", 
-  "parent": 114, 
+  "parent": null, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "", 
@@ -2492,7 +2504,7 @@
 {
   "first_name": "xJinny", 
   "last_name": "", 
-  "parent": 114, 
+  "parent": null, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "", 
@@ -2500,48 +2512,10 @@
   "age": "65", 
   "birthdate": "1773", 
   "children": [
-    189, 
-    190, 
-    191, 
-    192, 
-    193, 
-    194, 
-    195, 
-    196, 
-    197, 
-    198, 
-    199, 
-    200, 
-    226, 
-    227, 
-    228, 
-    229, 
-    230, 
-    231, 
-    232, 
-    233, 
-    234, 
-    235, 
-    300, 
-    301, 
-    302, 
-    303, 
-    304, 
-    305, 
-    306, 
-    307, 
-    308, 
-    309, 
-    310, 
-    311, 
-    312, 
-    313, 
-    314, 
-    315, 
-    316, 
-    317, 
-    318, 
-    319
+    275, 
+    276, 
+    277, 
+    278
   ], 
   "buyer_name": "Henry Johnson", 
   "long": "-77.023702", 
@@ -3460,7 +3434,7 @@
   "full_name": "Nace Butler", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "167", 
+  "id": "166", 
   "identity": "", 
   "extra_info": "[strike thorugh (blacksmith)] listed as 50 in bill of sale"
 },
@@ -3480,7 +3454,7 @@
   "full_name": "Nace (Butler)", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "168", 
+  "id": "167", 
   "identity": "?", 
   "extra_info": "ran away"
 },
@@ -3500,7 +3474,7 @@
   "full_name": "Biby (Butler?)", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "169", 
+  "id": "168", 
   "identity": "", 
   "extra_info": "listed with infant on bill of sale"
 },
@@ -3520,7 +3494,7 @@
   "full_name": "Suckey", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "170", 
+  "id": "169", 
   "identity": "", 
   "extra_info": ""
 },
@@ -3540,7 +3514,7 @@
   "full_name": "Bridget", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "171", 
+  "id": "170", 
   "identity": "", 
   "extra_info": ""
 },
@@ -3560,7 +3534,7 @@
   "full_name": "Caroline", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "172", 
+  "id": "171", 
   "identity": "", 
   "extra_info": "listed as 16"
 },
@@ -3580,7 +3554,7 @@
   "full_name": "Basil", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "173", 
+  "id": "172", 
   "identity": "", 
   "extra_info": "listed as 14"
 },
@@ -3600,7 +3574,7 @@
   "full_name": "Martha Anne", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "174", 
+  "id": "173", 
   "identity": "", 
   "extra_info": "Listed 12, and with middle name"
 },
@@ -3620,7 +3594,7 @@
   "full_name": "Anne", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "175", 
+  "id": "174", 
   "identity": "", 
   "extra_info": ""
 },
@@ -3640,7 +3614,7 @@
   "full_name": "Gabe", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "176", 
+  "id": "175", 
   "identity": "", 
   "extra_info": "listed as 9"
 },
@@ -3660,7 +3634,7 @@
   "full_name": "Biby", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "177", 
+  "id": "176", 
   "identity": "", 
   "extra_info": "Listed as 8"
 },
@@ -3680,7 +3654,7 @@
   "full_name": "Henry", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "178", 
+  "id": "177", 
   "identity": "", 
   "extra_info": "listed as 7"
 },
@@ -3700,7 +3674,7 @@
   "full_name": "Thomas", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "179", 
+  "id": "178", 
   "identity": "", 
   "extra_info": ""
 },
@@ -3720,7 +3694,7 @@
   "full_name": "Mary ", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "180", 
+  "id": "179", 
   "identity": "", 
   "extra_info": ""
 },
@@ -3740,7 +3714,7 @@
   "full_name": "John Lewis", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "181", 
+  "id": "180", 
   "identity": "", 
   "extra_info": "name from bill of sale"
 },
@@ -3760,7 +3734,7 @@
   "full_name": "Henny", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "182", 
+  "id": "181", 
   "identity": "", 
   "extra_info": ""
 },
@@ -3780,7 +3754,7 @@
   "full_name": "Emeline Brown", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "183", 
+  "id": "182", 
   "identity": "", 
   "extra_info": "Age 13 in bill of sale"
 },
@@ -3800,7 +3774,7 @@
   "full_name": "Amanda", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "184", 
+  "id": "183", 
   "identity": "", 
   "extra_info": "Age 10 in bill of sale"
 },
@@ -3820,7 +3794,7 @@
   "full_name": "Elizabeth", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "185", 
+  "id": "184", 
   "identity": "", 
   "extra_info": "Age 8 in bill of sale"
 },
@@ -3840,7 +3814,7 @@
   "full_name": "Billy", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "186", 
+  "id": "185", 
   "identity": "", 
   "extra_info": ""
 },
@@ -3860,7 +3834,7 @@
   "full_name": "Biby", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "187", 
+  "id": "186", 
   "identity": "", 
   "extra_info": ""
 },
@@ -3880,14 +3854,14 @@
   "full_name": "Hariet Eagline", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "188", 
+  "id": "187", 
   "identity": "", 
   "extra_info": "Surname from bill of sale;  age 6 in bill of sale"
 },
 {
   "first_name": "Robert", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -3900,14 +3874,14 @@
   "full_name": "Robert", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "189", 
+  "id": "188", 
   "identity": "", 
   "extra_info": ""
 },
 {
   "first_name": "Mary ", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -3920,14 +3894,14 @@
   "full_name": "Mary ", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "190", 
+  "id": "189", 
   "identity": "", 
   "extra_info": ""
 },
 {
   "first_name": "Abraham", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -3940,14 +3914,14 @@
   "full_name": "Abraham", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "191", 
+  "id": "190", 
   "identity": "", 
   "extra_info": ""
 },
 {
   "first_name": "Robert", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -3960,14 +3934,14 @@
   "full_name": "Robert", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "192", 
+  "id": "191", 
   "identity": "", 
   "extra_info": ""
 },
 {
   "first_name": "James", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -3980,14 +3954,14 @@
   "full_name": "James", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "193", 
+  "id": "192", 
   "identity": "", 
   "extra_info": ""
 },
 {
   "first_name": "Bridget", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4000,14 +3974,14 @@
   "full_name": "Bridget", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "194", 
+  "id": "193", 
   "identity": "", 
   "extra_info": ""
 },
 {
   "first_name": "Mary Jane", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4020,14 +3994,14 @@
   "full_name": "Mary Jane", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "195", 
+  "id": "194", 
   "identity": "", 
   "extra_info": ""
 },
 {
   "first_name": "Susan", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4040,14 +4014,14 @@
   "full_name": "Susan", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "196", 
+  "id": "195", 
   "identity": "", 
   "extra_info": ""
 },
 {
   "first_name": "Sally Anne", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4060,14 +4034,14 @@
   "full_name": "Sally Anne", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "197", 
+  "id": "196", 
   "identity": "", 
   "extra_info": ""
 },
 {
   "first_name": "Nelly", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4080,14 +4054,14 @@
   "full_name": "Nelly", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "198", 
+  "id": "197", 
   "identity": "", 
   "extra_info": ""
 },
 {
   "first_name": "Charles", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4100,14 +4074,14 @@
   "full_name": "Charles", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "199", 
+  "id": "198", 
   "identity": "", 
   "extra_info": ""
 },
 {
   "first_name": "Child", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4120,7 +4094,7 @@
   "full_name": "Child", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "200", 
+  "id": "199", 
   "identity": "", 
   "extra_info": ""
 },
@@ -4140,7 +4114,7 @@
   "full_name": "Bill Cush", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "201", 
+  "id": "200", 
   "identity": "", 
   "extra_info": "Cusha"
 },
@@ -4160,7 +4134,7 @@
   "full_name": "Regis Gough", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "202", 
+  "id": "201", 
   "identity": "", 
   "extra_info": "Gough, married off"
 },
@@ -4175,21 +4149,21 @@
   "age": "55", 
   "birthdate": "1783", 
   "children": [
-    204
+    203
   ], 
   "buyer_name": "Jesse Batey", 
   "long": "-76.423851", 
   "full_name": "Phil Merrick", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "203", 
+  "id": "202", 
   "identity": "", 
   "extra_info": "last name from bill of sale"
 },
 {
   "first_name": "Nelly", 
   "last_name": "Merrick", 
-  "parent": 203, 
+  "parent": 202, 
   "ship": "Ship 2", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4202,7 +4176,7 @@
   "full_name": "Nelly Merrick", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "204", 
+  "id": "203", 
   "identity": "", 
   "extra_info": "last name inferred from family relationship"
 },
@@ -4222,7 +4196,7 @@
   "full_name": "Lewis", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "205", 
+  "id": "204", 
   "identity": "", 
   "extra_info": "listed as 12"
 },
@@ -4242,7 +4216,7 @@
   "full_name": "Gusty", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "206", 
+  "id": "205", 
   "identity": "", 
   "extra_info": "Listed as 9, Gustin in bill of sale"
 },
@@ -4262,7 +4236,7 @@
   "full_name": "George", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "207", 
+  "id": "206", 
   "identity": "", 
   "extra_info": ""
 },
@@ -4282,7 +4256,7 @@
   "full_name": "Joseph", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "208", 
+  "id": "207", 
   "identity": "", 
   "extra_info": "married off"
 },
@@ -4302,7 +4276,7 @@
   "full_name": "Harry", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "209", 
+  "id": "208", 
   "identity": "", 
   "extra_info": ""
 },
@@ -4322,7 +4296,7 @@
   "full_name": "Anny", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "210", 
+  "id": "209", 
   "identity": "", 
   "extra_info": ""
 },
@@ -4342,7 +4316,7 @@
   "full_name": "Harry", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "211", 
+  "id": "210", 
   "identity": "", 
   "extra_info": "married off"
 },
@@ -4362,7 +4336,7 @@
   "full_name": "Nelly", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "212", 
+  "id": "211", 
   "identity": "", 
   "extra_info": ""
 },
@@ -4382,7 +4356,7 @@
   "full_name": "Gabe", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "213", 
+  "id": "212", 
   "identity": "", 
   "extra_info": "blacksmith, married off"
 },
@@ -4402,7 +4376,7 @@
   "full_name": "Daniel", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "214", 
+  "id": "213", 
   "identity": "", 
   "extra_info": ""
 },
@@ -4422,7 +4396,7 @@
   "full_name": "Louisa", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "215", 
+  "id": "214", 
   "identity": "", 
   "extra_info": ""
 },
@@ -4442,7 +4416,7 @@
   "full_name": "Arnold", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "216", 
+  "id": "215", 
   "identity": "", 
   "extra_info": "ran away"
 },
@@ -4457,21 +4431,21 @@
   "age": "27", 
   "birthdate": "1811", 
   "children": [
-    218
+    217
   ], 
   "buyer_name": "Henry Johnson", 
   "long": "-76.423851", 
   "full_name": "Anny Jones", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "217", 
+  "id": "216", 
   "identity": "", 
   "extra_info": "Anne Jones (26) in bill of sale"
 },
 {
   "first_name": "Arnold", 
   "last_name": "Jones", 
-  "parent": 217, 
+  "parent": 216, 
   "ship": "", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4484,7 +4458,7 @@
   "full_name": "Arnold Jones", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "218", 
+  "id": "217", 
   "identity": "", 
   "extra_info": "Age 9 in bill of sale;  surname inferred from family"
 },
@@ -4504,7 +4478,7 @@
   "full_name": "Louisa", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "219", 
+  "id": "218", 
   "identity": "", 
   "extra_info": "Age 6 in bill of sale"
 },
@@ -4524,7 +4498,7 @@
   "full_name": "Betsy Dorsey", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "220", 
+  "id": "219", 
   "identity": "", 
   "extra_info": "Betty Dorsey (30) in Bill of sale"
 },
@@ -4544,7 +4518,7 @@
   "full_name": "Baney", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "221", 
+  "id": "220", 
   "identity": "", 
   "extra_info": "Bernard (15) in bill of sale"
 },
@@ -4564,7 +4538,7 @@
   "full_name": "Lucinda", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "222", 
+  "id": "221", 
   "identity": "", 
   "extra_info": "Age 13 in bill of sale"
 },
@@ -4584,7 +4558,7 @@
   "full_name": "Greenfield", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "223", 
+  "id": "222", 
   "identity": "", 
   "extra_info": ""
 },
@@ -4604,7 +4578,7 @@
   "full_name": "Daniel", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "224", 
+  "id": "223", 
   "identity": "", 
   "extra_info": ""
 },
@@ -4624,14 +4598,14 @@
   "full_name": "Bill", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "225", 
+  "id": "224", 
   "identity": "", 
   "extra_info": "not married"
 },
 {
   "first_name": "xWatt", 
   "last_name": "(Campbell)", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4644,14 +4618,14 @@
   "full_name": "Watt", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "226", 
+  "id": "225", 
   "identity": "", 
   "extra_info": "Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html"
 },
 {
   "first_name": "Teresa [strike through Baney]", 
   "last_name": "(Campbell)", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4664,14 +4638,14 @@
   "full_name": "Teresa", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "227", 
+  "id": "226", 
   "identity": "", 
   "extra_info": "Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html"
 },
 {
   "first_name": "Frank", 
   "last_name": "(Campbell)", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4684,14 +4658,14 @@
   "full_name": "Frank", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "228", 
+  "id": "227", 
   "identity": "", 
   "extra_info": "Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html"
 },
 {
   "first_name": "Sam", 
   "last_name": "(Campbell)", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4704,14 +4678,14 @@
   "full_name": "Sam", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "229", 
+  "id": "228", 
   "identity": "", 
   "extra_info": "Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html"
 },
 {
   "first_name": "Rachel", 
   "last_name": "(Campbell)", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4724,14 +4698,14 @@
   "full_name": "Rachel", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "230", 
+  "id": "229", 
   "identity": "", 
   "extra_info": "Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html"
 },
 {
   "first_name": "Alexander", 
   "last_name": "(Campbell)", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4744,14 +4718,14 @@
   "full_name": "Alexander", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "231", 
+  "id": "230", 
   "identity": "", 
   "extra_info": "Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html"
 },
 {
   "first_name": "Charlotte", 
   "last_name": "(Campbell)", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4764,14 +4738,14 @@
   "full_name": "Charlotte", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "232", 
+  "id": "231", 
   "identity": "", 
   "extra_info": "Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html"
 },
 {
   "first_name": "Emeline", 
   "last_name": "(Campbell)", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4784,14 +4758,14 @@
   "full_name": "Emeline", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "233", 
+  "id": "232", 
   "identity": "", 
   "extra_info": "Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html"
 },
 {
   "first_name": "Watt", 
   "last_name": "(Campbell)", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "Ship 1", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4804,14 +4778,14 @@
   "full_name": "Watt", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "234", 
+  "id": "233", 
   "identity": "", 
   "extra_info": "Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html"
 },
 {
   "first_name": "Child", 
   "last_name": "(Campbell)", 
-  "parent": 121, 
+  "parent": null, 
   "ship": "", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4824,7 +4798,7 @@
   "full_name": "Child", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "235", 
+  "id": "234", 
   "identity": "", 
   "extra_info": "Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html"
 },
@@ -4844,7 +4818,7 @@
   "full_name": "Dick", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "236", 
+  "id": "235", 
   "identity": "", 
   "extra_info": "ran away"
 },
@@ -4864,7 +4838,7 @@
   "full_name": "Adeline Campbell", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "237", 
+  "id": "236", 
   "identity": "", 
   "extra_info": "Surname from bill of sale;  age 28 in bill of sale"
 },
@@ -4884,7 +4858,7 @@
   "full_name": "Matt", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "238", 
+  "id": "237", 
   "identity": "", 
   "extra_info": ""
 },
@@ -4904,7 +4878,7 @@
   "full_name": "Ginny", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "239", 
+  "id": "238", 
   "identity": "?", 
   "extra_info": ""
 },
@@ -4924,7 +4898,7 @@
   "full_name": "Catherine", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "240", 
+  "id": "239", 
   "identity": "", 
   "extra_info": ""
 },
@@ -4944,7 +4918,7 @@
   "full_name": "Child (Maria - 9 months)", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "241", 
+  "id": "240", 
   "identity": "?", 
   "extra_info": ""
 },
@@ -4959,21 +4933,21 @@
   "age": "55", 
   "birthdate": "1783", 
   "children": [
-    243
+    242
   ], 
   "buyer_name": "Jesse Batey", 
   "long": "-76.423851", 
   "full_name": "Nelly Barney", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "242", 
+  "id": "241", 
   "identity": "", 
   "extra_info": "Surname from bill of sale"
 },
 {
   "first_name": "Eliza", 
   "last_name": "Barney", 
-  "parent": 242, 
+  "parent": 241, 
   "ship": "", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -4986,7 +4960,7 @@
   "full_name": "Eliza", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "243", 
+  "id": "242", 
   "identity": "?", 
   "extra_info": "Could be Eliza Butler (19), listed with an infant"
 },
@@ -5006,7 +4980,7 @@
   "full_name": "Regis", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "244", 
+  "id": "243", 
   "identity": "", 
   "extra_info": "married off"
 },
@@ -5026,7 +5000,7 @@
   "full_name": "Kitty Walton", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "245", 
+  "id": "244", 
   "identity": "", 
   "extra_info": "Surname from bill of sale"
 },
@@ -5046,7 +5020,7 @@
   "full_name": "Peter", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "246", 
+  "id": "245", 
   "identity": "", 
   "extra_info": "married off"
 },
@@ -5066,7 +5040,7 @@
   "full_name": "John [strike through] (Brown)", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "247", 
+  "id": "246", 
   "identity": "?", 
   "extra_info": "Might be John Brown;  Surname from bill of sale"
 },
@@ -5086,7 +5060,7 @@
   "full_name": "Michael", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "248", 
+  "id": "247", 
   "identity": "", 
   "extra_info": "married off"
 },
@@ -5106,7 +5080,7 @@
   "full_name": "Ned", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "249", 
+  "id": "248", 
   "identity": "", 
   "extra_info": ""
 },
@@ -5126,7 +5100,7 @@
   "full_name": "Sally", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/12", 
-  "id": "250", 
+  "id": "249", 
   "identity": "?", 
   "extra_info": "Age listed as 60 in bill of sale"
 },
@@ -5146,7 +5120,7 @@
   "full_name": "Alexius", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "251", 
+  "id": "250", 
   "identity": "", 
   "extra_info": "married off"
 },
@@ -5166,7 +5140,7 @@
   "full_name": "Henry", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "252", 
+  "id": "251", 
   "identity": "", 
   "extra_info": ""
 },
@@ -5186,7 +5160,7 @@
   "full_name": "Frederick", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "253", 
+  "id": "252", 
   "identity": "", 
   "extra_info": ""
 },
@@ -5201,21 +5175,21 @@
   "age": "19", 
   "birthdate": "1819", 
   "children": [
-    255
+    254
   ], 
   "buyer_name": "Henry Johnson", 
   "long": "-76.423851", 
   "full_name": "Ginny", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "254", 
+  "id": "253", 
   "identity": "", 
   "extra_info": "married off"
 },
 {
   "first_name": "Girl", 
   "last_name": "", 
-  "parent": 254, 
+  "parent": 253, 
   "ship": "", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -5228,7 +5202,7 @@
   "full_name": "Girl", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "255", 
+  "id": "254", 
   "identity": "", 
   "extra_info": ""
 },
@@ -5248,7 +5222,7 @@
   "full_name": "Zeke", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "256", 
+  "id": "255", 
   "identity": "", 
   "extra_info": "married off;  Leke in the transcription of bill of sale"
 },
@@ -5263,21 +5237,21 @@
   "age": "64", 
   "birthdate": "1774", 
   "children": [
-    258
+    257
   ], 
   "buyer_name": "Henry Johnson", 
   "long": "-76.423851", 
   "full_name": "Nathan", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "257", 
+  "id": "256", 
   "identity": "", 
   "extra_info": ""
 },
 {
   "first_name": "Henny [strike through]", 
   "last_name": "", 
-  "parent": 257, 
+  "parent": 256, 
   "ship": "", 
   "farm_name": "St. Inigoes", 
   "age_approx": "", 
@@ -5290,7 +5264,7 @@
   "full_name": "Henny [strike through]", 
   "lat": "38.150421", 
   "refernce_url": "", 
-  "id": "258", 
+  "id": "257", 
   "identity": "", 
   "extra_info": "married off"
 },
@@ -5310,14 +5284,14 @@
   "full_name": "James", 
   "lat": "38.150421", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "259", 
+  "id": "258", 
   "identity": "", 
   "extra_info": "not married"
 },
 {
   "first_name": "Charles", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 109, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5330,14 +5304,14 @@
   "full_name": "Boy (Charles - 1)", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "300", 
+  "id": "259", 
   "identity": "?", 
   "extra_info": "name and age from bill of sale"
 },
 {
   "first_name": "Sam", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 109, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5350,14 +5324,14 @@
   "full_name": "Boy (Sam - 1)", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "301", 
+  "id": "260", 
   "identity": "?", 
   "extra_info": "Is this Besty (Bess Hill_\ufffd\ufffds) missing infant Sam?"
 },
 {
   "first_name": "Nance", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 109, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5370,14 +5344,14 @@
   "full_name": "Girl (Nance - 8)", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "302", 
+  "id": "261", 
   "identity": "?", 
   "extra_info": "name and age from bill of sale"
 },
 {
   "first_name": "Eliza ", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 109, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5390,14 +5364,14 @@
   "full_name": "Girl (Eliza - 10)", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "303", 
+  "id": "262", 
   "identity": "?", 
   "extra_info": "name and age from bill of sale"
 },
 {
   "first_name": "Ellen", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 110, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5410,14 +5384,14 @@
   "full_name": "Girl (Ellen - 4)", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "304", 
+  "id": "263", 
   "identity": "?", 
   "extra_info": ""
 },
 {
   "first_name": "Martha ", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 110, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5430,14 +5404,14 @@
   "full_name": "Girl (Martha - 2)", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "305", 
+  "id": "264", 
   "identity": "?", 
   "extra_info": ""
 },
 {
   "first_name": "Girl", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 111, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5450,14 +5424,14 @@
   "full_name": "Girl", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "306", 
+  "id": "265", 
   "identity": "", 
   "extra_info": "age from bill of sale"
 },
 {
   "first_name": "Girl", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 111, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5470,14 +5444,14 @@
   "full_name": "Girl", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "307", 
+  "id": "266", 
   "identity": "", 
   "extra_info": "age from bill of sale"
 },
 {
   "first_name": "Girl", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 111, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5490,14 +5464,14 @@
   "full_name": "Girl", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "308", 
+  "id": "267", 
   "identity": "", 
   "extra_info": "age from bill of sale"
 },
 {
   "first_name": "Oswald", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 112, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5510,14 +5484,14 @@
   "full_name": "Boy (Oswald - 5)", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "309", 
+  "id": "268", 
   "identity": "?", 
   "extra_info": ""
 },
 {
   "first_name": "Sarah  ", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 112, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5530,14 +5504,14 @@
   "full_name": "Girl (Sarah - 10)", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/13", 
-  "id": "310", 
+  "id": "269", 
   "identity": "?", 
   "extra_info": ""
 },
 {
   "first_name": "Girl", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 113, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5550,14 +5524,14 @@
   "full_name": "Girl", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "311", 
+  "id": "270", 
   "identity": "", 
   "extra_info": "age from bill of sale"
 },
 {
   "first_name": "Boy", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 114, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5570,14 +5544,14 @@
   "full_name": "Boy", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "312", 
+  "id": "271", 
   "identity": "", 
   "extra_info": "age from bill of sale"
 },
 {
   "first_name": "Boy", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 114, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5590,14 +5564,14 @@
   "full_name": "Boy", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "313", 
+  "id": "272", 
   "identity": "", 
   "extra_info": "age from bill of sale"
 },
 {
   "first_name": "Girl", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 114, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5610,14 +5584,14 @@
   "full_name": "Girl", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "314", 
+  "id": "273", 
   "identity": "", 
   "extra_info": "age from bill of sale"
 },
 {
   "first_name": "Girl", 
   "last_name": "", 
-  "parent": 121, 
+  "parent": 114, 
   "ship": "", 
   "farm_name": "St. Thomas's Manor", 
   "age_approx": "less than 4", 
@@ -5630,7 +5604,7 @@
   "full_name": "Girl", 
   "lat": "38.465522", 
   "refernce_url": "http://slaveryarchive.georgetown.edu/items/show/14", 
-  "id": "315", 
+  "id": "274", 
   "identity": "", 
   "extra_info": "age from bill of sale"
 },
@@ -5650,7 +5624,7 @@
   "full_name": "Girl", 
   "lat": "38.465522", 
   "refernce_url": "", 
-  "id": "316", 
+  "id": "275", 
   "identity": "", 
   "extra_info": ""
 },
@@ -5670,7 +5644,7 @@
   "full_name": "Girl", 
   "lat": "38.465522", 
   "refernce_url": "", 
-  "id": "317", 
+  "id": "276", 
   "identity": "", 
   "extra_info": ""
 },
@@ -5690,7 +5664,7 @@
   "full_name": "Girl", 
   "lat": "38.465522", 
   "refernce_url": "", 
-  "id": "318", 
+  "id": "277", 
   "identity": "", 
   "extra_info": ""
 },
@@ -5710,8 +5684,7 @@
   "full_name": "Girl", 
   "lat": "38.465522", 
   "refernce_url": "", 
-  "id": "319", 
+  "id": "278", 
   "identity": "", 
   "extra_info": ""
-},
-]
+}]

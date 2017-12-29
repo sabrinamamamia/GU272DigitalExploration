@@ -31,24 +31,27 @@ for row in fileReader:
 		"children": []
 	}
 
-
 	for key in row[1].split("; "):
 		if key == '':
 			continue
 		# Family key 'H0' indicates head of family 0. Add slave to  
 		# parent dictionary (key: family id, value: slave id)
 		elif key[0] == 'H':
-			parentDict[key[1]] = row[0];
+			parentDict[key[1:]] = row[0];
 		# Family key 'FO' indicates member of family 0. Set object's parent 
 		# variable and append object's id to its parent's list of children
 		elif key[0] == 'F':
-			slaveDict[int(row[0])]["parent"] = int(parentDict[key[1]])
-			slaveDict[int(parentDict[key[1]])]["children"].append(int(row[0]))
+			# print "key[1:]"
+			# print key[1:]
+			if key[1:] in parentDict: 
+				slaveDict[int(row[0])]["parent"] = slaveDict[int(parentDict[key[1:]])]
+				slaveDict[int(parentDict[key[1:]])]["children"].append(slaveDict[int(row[0])]);
 
 	# Write slave dictionary to JSON file
 	with open('gu272-data.json', 'w') as f:
 		f.write("[")
-		for slave in slaveDict:
+		for idx, slave in enumerate(slaveDict):
 			json.dump(slaveDict[slave], f, indent=2)
-			f.write(",\n")
+			if idx != len(slaveDict)-1:
+				f.write(",\n")
 		f.write("]")
