@@ -35,7 +35,7 @@ function collapse(d) {
 }
 
 //Load JSON
-var data = d3.json('gu272-data.json', function(error, json) {
+var data = d3.json('data-visualization/gu272-data.json', function(error, json) {
 	if (error) return console.error(error);	
 	filteredJson = []
 	for (var id in json) {
