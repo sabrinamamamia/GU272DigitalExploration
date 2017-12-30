@@ -6,6 +6,9 @@ var slave_controller = require('../controllers/slaveController.js');
 /* GET home page. */
 router.get('/', slave_controller.index);
 
+/* GET family tree visualization. */
+router.get('/visualization', slave_controller.treeviz_get);
+
 /* GET request for list of all Slave items. */
 router.get('/slaves', slave_controller.slave_list);
 

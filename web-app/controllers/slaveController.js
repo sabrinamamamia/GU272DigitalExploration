@@ -1,9 +1,17 @@
 var Slave = require('../models/slave.js');
 var async = require('async');
+var path = require('path');
 
 //Display count of Slaves
 exports.index = function(req, res, next) {
 	res.render('index');
+};
+
+exports.treeviz_get = function(req, res, next) {
+	// console.log(__dirname);
+	// res.sendFile(path.join(__dirname+'data-visualization/tree-viz.html'));
+	// res.sendFile(__dirname + '/../views/viz/treeviz.html');
+	// res.sendFile(path.resolve('views/viz/treeviz.html'));
 };
 
 // Display count of all records and list all records 

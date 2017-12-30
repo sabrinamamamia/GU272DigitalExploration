@@ -11,6 +11,11 @@ var users = require('./routes/users');
 
 var app = express();
 
+// app.use(express.static(__dirname + '/views'));
+// //Store all HTML files in view folder.
+// app.use(express.static(__dirname + '/Script'));
+// //Store all JS and CSS in Scripts folder.
+
 //Set up mongoose connection
 var mongoose = require('mongoose');
 var mongoDB = 'mongodb://cooluser:coolpassword@ds129796.mlab.com:29796/gsa';
