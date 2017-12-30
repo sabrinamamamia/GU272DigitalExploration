@@ -1,8 +1,3 @@
-/*
-* Tree diagram derived from: 
-* https://bl.ocks.org/d3noob/43a860bc0024792f8803bba8ca0d5ecd 
-*/
-
 var margin = {top: 50, right: 50, bottom: 50, left: 100},
     width = 1500 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
@@ -239,3 +234,4 @@ var data = d3.json('gu272-data.json', function(error, json) {
 		});
 	}
 });
+
