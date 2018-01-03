@@ -16,7 +16,7 @@ As the 2017-18 Digital Fellow, I am working to organize, store, and visualize th
 
 ### Demo
 
-[Tree-Viz](tree-viz.gif)
+![Tree-Viz](tree-viz.gif)
 
 ------
 
