@@ -35,15 +35,11 @@ exports.treeviz_get = function(req, res, next) {
 				}
 			}
 		
-		// fs.readFile(file, 'utf8', function (err, data) {
-		//   if (err) {
-		//     console.log('Error: ' + err);
-		//     return;
-		//   }
-		//   obj_pulseconfig = JSON.parse(data);
-		//   console.dir(data);
-		// });
-		// console.log(filteredData_server);
+			//Swap objects so tree charts don't overlap
+			// var temp = filteredData_server[1];
+			// filteredData_server[1] = filteredData_server[2];
+			// filteredData_server[2] = temp;
+
 		res.render('tree_viz', {title: 'Family Tree Data Visualization', data: filteredData_server});
 	});
 };

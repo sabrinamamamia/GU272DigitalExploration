@@ -14,8 +14,15 @@ As the 2017-18 Digital Fellow, I am working to organize, store, and visualize th
 
 ------
 
+### Demo
+
+[Tree-Viz](tree-viz.gif)
+
+------
+
 ### Directory Structure
 
 * `data-visualization` contains the D3.js visualization drafts. These are now a part of the web application. 
     - `data-processing` contains scripts that convert csv to nested JSON.
 * `web-app` contains the ExpressJS/Node.JS web application.
+

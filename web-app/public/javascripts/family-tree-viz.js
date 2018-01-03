@@ -4,15 +4,17 @@
 */
 
 var margin = {top: 50, right: 50, bottom: 50, left: 100},
-    width = 1500 - margin.left - margin.right,
+    width = 950 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
 
 var duration = 700;		//transition time
 
+var p = d3.select('.col-sm-10').append("p");
+
 //Append svg and g elements to body
-var svg = d3.select("body").append("svg")
+var svg = p.append("svg")
 	.attr("width", width + margin.right + margin.left)
-	.attr("height", height + margin.top + margin.bottom)
+	.attr("height", height + margin.top + margin.bottom);
 
 // Collapse node and all it's children
 function collapse(d) {
@@ -38,10 +40,10 @@ var trees = svg.selectAll('g.tree')
 		})
 		.attr("transform", function(d) {
 			var x,y;
-			if (i <= 3) y = 0;
-			else if (i > 3 && i < 8) y = 200;
+			if (i <= 2) y = 0;
+			else if (i > 2 && i < 7) y = 200;
 			else y = 400;
-			return "translate(" + (((i++ % 4) * 350) + 100)+ "," + y + ")"
+			return "translate(" + (((i++ % 4) * 335) + 100)+ "," + y + ")"
 		});
 
 //Call chart function for every JSON objecct
@@ -110,7 +112,7 @@ function chart(selection) {
 		      .attr("text-anchor", function(d) {
 		          return d.children || d._children ? "end" : "start";
 		      })
-		      .text(function(d) { return d.data.full_name;});
+		      .text(function(d) { return d.data.first_name});
 
 		  var nodeUpdate = nodeEnter.merge(node);
 

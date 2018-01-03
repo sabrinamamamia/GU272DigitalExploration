@@ -2,6 +2,11 @@ body {
   /*text-align: center;*/
 }
 
+div {
+  display: inline-block;
+  float:left
+}
+
 .person rect {
   fill: #fff;
   stroke: steelblue;
