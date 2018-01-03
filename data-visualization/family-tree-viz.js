@@ -14,17 +14,6 @@ var svg = d3.select("body").append("svg")
 	.attr("width", width + margin.right + margin.left)
 	.attr("height", height + margin.top + margin.bottom)
 
-// Recursively replaces child id with objects
-function setChildren(json, id) {
-	for (var i in json[id].children) {
-		json[id].children[i] = json[json[id].children[i] - 1];
-		json[id].children[i].parent = json[id];
-		if (json[id].children[i].children.length > 0) {
-			setChildren(json, json[id].children[i].id);
-		}
-	}
-}
-
 // Collapse node and all it's children
 function collapse(d) {
   if(d.children) {
@@ -35,24 +24,14 @@ function collapse(d) {
 }
 
 //Load JSON
-var data = d3.json('data-visualization/gu272-data.json', function(error, json) {
+var data = d3.json('/data-visualization/data/filtered-gu272-data.json', function(error, json) {
 	if (error) return console.error(error);	
-	filteredJson = []
-	for (var id in json) {
-		setChildren(json, id);
-		if (json[id].children.length >= 3 && json[id].parent == null) {
-			filteredJson.push(json[id]);
-		}
-	}
-	//Swapped 2 elements to make viz trees fit on page
-	var temp = filteredJson[1];
-	filteredJson[1] = filteredJson[2];
-	filteredJson[2] = temp;
+
 	console.log(json);
 
 	var i = 0;
 	var trees = svg.selectAll('g.tree')
-		.data(filteredJson)
+		.data(json)
 		.enter()
 		.append('g')
 			.attr('class', 'tree')
@@ -136,6 +115,10 @@ var data = d3.json('data-visualization/gu272-data.json', function(error, json) {
 			      .text(function(d) { return d.data.full_name;});
 
 			  var nodeUpdate = nodeEnter.merge(node);
+
+			  console.log(node);
+			  console.log(nodeEnter);
+			  console.log(nodeUpdate);
 
 			  // Transition to the proper position for the node
 			  nodeUpdate.transition()
