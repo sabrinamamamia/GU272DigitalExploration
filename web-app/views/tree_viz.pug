@@ -1,0 +1,10 @@
+extend layout 
+
+block content
+	h1 #{title}
+		link(rel='stylesheet', href='stylesheets/slaveTree.css')
+		script(src='https://d3js.org/d3.v4.min.js')
+		script.
+			var filteredData_client = !{JSON.stringify(filteredData_server)};
+		script(src='javascripts/family-tree-viz.js')
+

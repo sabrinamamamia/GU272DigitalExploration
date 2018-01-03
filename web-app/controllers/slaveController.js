@@ -1,6 +1,8 @@
 var Slave = require('../models/slave.js');
 var async = require('async');
 var path = require('path');
+var jsonfile = require('jsonfile')
+var fs = require('fs');
 
 //Display count of Slaves
 exports.index = function(req, res, next) {
@@ -8,10 +10,42 @@ exports.index = function(req, res, next) {
 };
 
 exports.treeviz_get = function(req, res, next) {
-	// console.log(__dirname);
-	// res.sendFile(path.join(__dirname+'data-visualization/tree-viz.html'));
-	// res.sendFile(__dirname + '/../views/viz/treeviz.html');
-	// res.sendFile(path.resolve('views/viz/treeviz.html'));
+
+	// Recursively replaces child id with objects
+	function setChildren(json, id) {
+		for (var i in json[id].children) {
+			json[id].children[i] = json[json[id].children[i] - 1];
+			// json[id].children[i].parent = json[id];
+			if (json[id].children[i].children.length > 0) {
+				setChildren(json, json[id].children[i].id);
+			}
+		}
+	}
+
+	var file = __dirname + '/../data/gu272-data.json';
+	filteredData_server = []
+	jsonfile.readFile(file, function(err, json) {
+		  // console.dir(json)
+			if (err) return console.error(err);	
+			for (var id in json) {
+				setChildren(json, id);
+				// console.log(json[id])
+				if (json[id].children.length >= 3 && json[id].parent == null) {
+					filteredData_server.push(json[id]);
+				}
+			}
+		
+		// fs.readFile(file, 'utf8', function (err, data) {
+		//   if (err) {
+		//     console.log('Error: ' + err);
+		//     return;
+		//   }
+		//   obj_pulseconfig = JSON.parse(data);
+		//   console.dir(data);
+		// });
+		// console.log(filteredData_server);
+		res.render('tree_viz', {title: 'Family Tree Data Visualization', data: filteredData_server});
+	});
 };
 
 // Display count of all records and list all records 
