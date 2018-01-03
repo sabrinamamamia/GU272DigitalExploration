@@ -1,4 +1,4 @@
-### Georgetown Slavery Archive Digital Fellowship Project
+## Georgetown Slavery Archive Digital Fellowship Project
 
 ### Background
 The [Georgetown Slavery Archive (GSA)](http://slaveryarchive.georgetown.edu/) is an online, digital repository of archival material relating to slavery, Georgetown, and the Maryland Province of the Society of Jesus. The GSA was initiated in February 2016 by the [Working Group for Slavery, Memory, and Reconciliation](http://slavery.georgetown.edu/), and it continues to expand under the curation of [Professor Adam Rothman](https://gufaculty360.georgetown.edu/s/faculty-profile?netid=ar44%2F).
