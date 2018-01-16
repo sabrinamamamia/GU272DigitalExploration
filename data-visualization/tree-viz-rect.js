@@ -84,22 +84,42 @@ var data = d3.json('/data/filtered-gu272-data.json', function(error, json) {
 			  	})
 			  	.on('click', click);
 
-			  //Add circles for the nodes
-			  nodeEnter.append('circle')
-			  	.attr('class', 'node')
-			  	.attr('r', .5)
+			  //Add rects for the nodes
+			  // nodeEnter.append('rect')
+			  // 	.attr('class', 'node')
+			  // 	.attr("x", -70)
+			  // 	.attr("y", -8.5)
+			  //   .attr('width', 70)
+			  //   .attr('height', 17)
+		   //    .style("fill", function(d) {
+		   //        return d._children ? "lightsteelblue" : "#fff";
+		   //    });
+
+				nodeEnter.append('rect')
+					.attr('class', 'node')
+					.attr("x", function(d) {
+						return d.parent ? 0 : -d.data.first_name.length * 7;
+					})
+					.attr("y", -8.5)
+					.attr("width", function(d) {
+						return d.data.first_name.length * 7;
+					})
+					.attr('height', 17)
 		      .style("fill", function(d) {
 		          return d._children ? "lightsteelblue" : "#fff";
 		      });
+
 
 			  // Add labels for the nodes
 			  nodeEnter.append('text')
 			      .attr("dy", ".35em")
 			      .attr("x", function(d) {
-			          return d.children || d._children ? -13 : 13;
+			      		return 3;
+			        //   return d.children || d._children ? -13 : 13;
 			      })
 			      .attr("text-anchor", function(d) {
-			          return d.children || d._children ? "end" : "start";
+			      		return d.parent ? "start" : "end";
+			          // return d.children || d._children ? "end" : "start";
 			      })
 			      .text(function(d) { return d.data.first_name;});
 
@@ -114,8 +134,7 @@ var data = d3.json('/data/filtered-gu272-data.json', function(error, json) {
 			     });
 
 			  // Update the node attributes and style
-			  nodeUpdate.select('circle.node')
-			    .attr('r', 7)
+			  nodeUpdate.select('rect.node')
 			    .style("fill", function(d) {
 			        return d._children ? "lightsteelblue" : "#fff";
 			    })
@@ -129,9 +148,10 @@ var data = d3.json('/data/filtered-gu272-data.json', function(error, json) {
 			      })
 			      .remove();
 
-			  // On exit reduce the node circles size to 0
-			  nodeExit.select('circle')
-			    .attr('r', 1e-6);
+			  // On exit reduce the node rects size to 0
+			  nodeExit.select('rect')
+			    .attr('width', 0)
+			    .attr('height', 0);
 
 			  // On exit reduce the opacity of text labels
 			  nodeExit.select('text')

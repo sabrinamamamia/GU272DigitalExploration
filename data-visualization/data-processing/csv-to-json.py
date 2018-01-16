@@ -1,10 +1,10 @@
 import csv
 import json
 
-slaveDict = {}
-parentDict = {}
+slaveDict = {}	#key: slave id, value: all attributes
+parentDict = {} #key: family id, value: slave id
 
-file = open('csv/SlaveList-02-20-2017.csv')
+file = open('../data/SlaveList-01-16-2018.csv')
 fileReader = csv.reader(file)
 next(fileReader, None)
 
@@ -44,13 +44,14 @@ for row in fileReader:
 			# print "key[1:]"
 			# print key[1:]
 			if key[1:] in parentDict: 
-				slaveDict[int(row[0])]["parent"] = slaveDict[int(parentDict[key[1:]])]
+				slaveDict[int(row[0])]["parent"] = int(parentDict[key[1:]])
 				slaveDict[int(parentDict[key[1:]])]["children"].append(slaveDict[int(row[0])]);
 
 	# Write slave dictionary to JSON file
-	with open('gu272-data.json', 'w') as f:
+	with open('gu272-data-1.json', 'w') as f:
 		f.write("[")
 		for idx, slave in enumerate(slaveDict):
+			# print slaveDict[slave]
 			json.dump(slaveDict[slave], f, indent=2)
 			if idx != len(slaveDict)-1:
 				f.write(",\n")
