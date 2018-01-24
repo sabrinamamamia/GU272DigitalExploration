@@ -14,22 +14,26 @@ var svg = d3.select("body").append("svg")
 	.append("g")
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+var div = d3.select("body").append("div")
+  .attr("class", "tooltip")
+  .style("opacity", 0);
+
 var i = 0,							//node id increment factor 
 		duration = 700;			//duration of transition
 
 //Load data 
-var data = d3.json('/data/filtered-gu272-data.json', function(error, json) {
+var data = d3.json("/data/filtered-gu272-data.json", function(error, json) {
 	if (error) return console.error(error);	
 	// console.log(json);
 
 	//Bind json objects to g elements 
-	var trees = svg.selectAll('g.tree')
+	var trees = svg.selectAll("g.tree")
 		.data(json)
 		.enter()
-		.append('g')
-			.attr('class', 'tree')
+		.append("g")
+			.attr("class", "tree")
 			//Tree id used in update() to bind data to correct g element
-			.attr('id', function(d) { return 't' + d.id; }) 
+			.attr("id", function(d) { return "t" + d.id; }) 
       .attr("transform", function(d) {
         var x,y;
         if (i <= 3) y = 0;
@@ -56,9 +60,10 @@ var data = d3.json('/data/filtered-gu272-data.json', function(error, json) {
 			var tree = d3.tree().size([height/2.5, width/2.5]);
 
 			update(root);
+
 			function update(source) {
 			  var treeData = tree(root);
-			  var g = d3.select('#t' + root.data.id);
+			  var g = d3.select("#t" + root.data.id);
 
 			  // Compute the new tree layout
 			  var nodes = treeData.descendants();
@@ -69,39 +74,43 @@ var data = d3.json('/data/filtered-gu272-data.json', function(error, json) {
 			  });
 
 			  // Declare node element and id
-			  var node = g.selectAll('g.node')
+			  var node = g.selectAll("g.node")
 			  	.data(nodes, function(d) {
 			  		return d.id || (d.id = ++i)})
-			 		.attr('id', function(d) {
-						return 'n' + d.data.id;
+			 		.attr("id", function(d) {
+						return "n" + d.data.id;
 					});
 
-			  //Enter new nodes at parent's previous position
-			  var nodeEnter = node.enter().append('g')
-			  	.attr('class', 'node')
-			  	.attr('transform', function(d) {
+			  //Enter new nodes at parent"s previous position
+			  var nodeEnter = node.enter().append("g")
+			  	.attr("class", "node")
+			  	.attr("transform", function(d) {
 			  		return "translate(" + source.y0 + "," + source.x0 + ")";
 			  	})
-			  	.on('click', click);
+			  	.on("click", function(d) {
+			  		mouseout();
+				  	click(d);
+			  	});
 
 			  //Add circles for the nodes
-			  nodeEnter.append('circle')
-			  	.attr('class', 'node')
-			  	.attr('r', .5)
+			  nodeEnter.append("circle")
+			  	.attr("class", "node")
+			  	.attr("r", .5)
 		      .style("fill", function(d) {
 		          return d._children ? "lightsteelblue" : "#fff";
 		      });
 
 			  // Add labels for the nodes
-			  nodeEnter.append('text')
+			  nodeEnter.append("text")
 			      .attr("dy", ".35em")
 			      .attr("x", function(d) {
-			          return d.children || d._children ? -13 : 13;
-			      })
+			          return d.children || d._children ? -13 : 13; })
 			      .attr("text-anchor", function(d) {
 			          return d.children || d._children ? "end" : "start";
 			      })
-			      .text(function(d) { return d.data.first_name;});
+			      .text(function(d) { return d.data.first_name;})
+				    .on("mouseover", function(d) { mouseover(d, g) })
+				    .on("mouseout", mouseout);
 
 			  var nodeUpdate = nodeEnter.merge(node);
 
@@ -109,17 +118,18 @@ var data = d3.json('/data/filtered-gu272-data.json', function(error, json) {
 			  nodeUpdate.transition()
 			    .duration(duration)
 			    .attr("transform", function(d) { 
-		        // return "translate(" + d.x + "," + d.y + ")";
 		        return "translate(" + d.y + "," + d.x + ")";        
 			     });
 
 			  // Update the node attributes and style
-			  nodeUpdate.select('circle.node')
-			    .attr('r', 7)
+			  nodeUpdate.select("circle.node")
+			    .attr("r", 7)
 			    .style("fill", function(d) {
 			        return d._children ? "lightsteelblue" : "#fff";
 			    })
-			    .attr('cursor', 'pointer');
+			    .attr("cursor", "pointer")
+			    .on('mouseover', function(d) { mouseover(d, g) })
+			    .on('mouseout', mouseout);
 
 			  // Remove any exiting nodes
 			  var nodeExit = node.exit().transition()
@@ -186,8 +196,6 @@ var data = d3.json('/data/filtered-gu272-data.json', function(error, json) {
 
 			  // Toggle children on click
 			  function click(d) {
-			  	console.log(d)
-			  	d
 			    if (d.children) {
 			        d._children = d.children;
 			        d.children = null;
@@ -196,6 +204,36 @@ var data = d3.json('/data/filtered-gu272-data.json', function(error, json) {
 			        d._children = null;
 			      }
 			    update(d);
+			  }
+
+			  function mouseover(d, g) {
+				  var tooltip = d3.select('.tooltip');
+
+		    	tooltip.transition()
+		    		.duration(300)
+		    		.style('opacity', 0.8);
+					tooltip
+				  	.html('<b>' + (d.data.full_name) + '</b><br>' +
+				  		'Birthdate: ' + (d.data.birthdate) + '<br>' + 
+		    			'Age: ' + (d.data.age) + '<br>')
+		    	// tooltip.style('display', 'inline-block')	
+		    	// 	.html((d.data.full_name) + '<br>' + 
+		    	// 		'Birthdate: ' + (d.data.birthdate) + '<br>' + 
+		    	// 		'Age: ' + (d.data.age) + '<br>')
+		    		tooltip.style('width', function() {
+		    			var maxLength = Math.max(Math.max(4 + d.data.age.length,
+		    				11 + d.data.birthdate.length), d.data.full_name.length);
+		    			return 8 * maxLength + 'px'})
+		    		.style('left', (d3.event.pageX) + 'px')
+		    		.style('top', (d3.event.pageY) + 'px')
+		    		.attr("transform", "translate(" + d.y + "," + d.x + ")");  
+			  }
+
+			  function mouseout() {
+			  	var tooltip = d3.select('.tooltip')
+         	tooltip.transition()
+         		.duration(500)
+						.style("opacity", 0);
 			  }
 			}
 		});

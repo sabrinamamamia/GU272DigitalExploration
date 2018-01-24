@@ -8,13 +8,6 @@ rect {
   stroke-width: 2px;
 }
 
-.person {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: bold;
-  font: 11px sans-serif;
-  cursor: pointer;
-}
-
 .link {
   fill: none;
   stroke: #ccc;
@@ -33,3 +26,18 @@ text {
   font: 11px sans-serif;
   cursor: pointer;
 }
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  height: 40px;
+  padding: 3px;
+  font: 11px sans-serif;
+  background: #c8d1dd;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.tooltip
+
