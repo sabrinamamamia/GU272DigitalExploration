@@ -1,14 +1,9 @@
-/*
-* Tree diagram derived from: 
-* https://bl.ocks.org/d3noob/43a860bc0024792f8803bba8ca0d5ecd 
-*/
-
-var margin = {top: 40, right: 50, bottom: 150, left: 80},
-    width = 1500 - margin.left - margin.right,
+var margin = {top: 40, right: 0, bottom: 150, left: 100},
+    width = 1250 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
 
 //Append svg and g elements to body
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#content").append("svg")
 	.attr("width", width + margin.right + margin.left)
 	.attr("height", height + margin.top + margin.bottom)
 	.append("g")
@@ -41,10 +36,6 @@ var data = d3.json("/data/filtered-gu272-data.json", function(error, json) {
         else y = 400;
         return "translate(" + (((i++ % 4) * 325))+ "," + y + ")"
       });
-			// .attr("transform", function(d) {
-			// 	var x = y = i++;
-			// 	return "translate(" + (((x % 4) * 325))+ "," + (y % 3) * 200 + ")"
-			// });
 
 	//Call chart function for every JSON objecct
 	trees.call(chart);
