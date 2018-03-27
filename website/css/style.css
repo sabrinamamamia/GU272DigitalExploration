@@ -1,0 +1,89 @@
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+}
+
+p {
+	margin: 0px 0px 0px 0px;
+}
+
+.content {
+	text-align: center;
+	padding-top: 15%;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.page {
+	height: 100%;
+	width: 100%;
+}
+
+#cover {
+	background: url(../images/background.jpg);
+	background-size: cover;				/* Adjust size */
+	background-position: center;	/* Adjust position */
+	font-family: "Lato";
+	color: white;
+}
+
+#timeline {
+	height: 300%;
+	/*height: 200%;*/
+}
+
+.fixed {
+	margin-left: 5%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  float: left;
+  width: 10%;
+}
+
+/*.fixed ul {
+	margin-left: 5%;
+}*/
+
+.fixed li {
+	font-size: 15px;
+}
+
+.fixed li:nth-child(odd) {
+	padding: 0px;
+	margin-left: -14px;
+	list-style-type: none; 
+	border-left: 1px dashed grey;
+	height: 8.33%;
+	/*height: 12.5%;*/
+}
+
+.date-container {
+	position: relative;
+	margin: 0% 10% 10% 25%;
+}
+
+h2.date-info: {
+	height: 33%;
+	text-align: right;
+	vertical-align: text-bottom;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.date-info {
+	vertical-align: top;
+}
+
+p.blank {
+	height: 20%;
+}
+
+
+/*#one {
+	color: yellow;
+}*/
+
