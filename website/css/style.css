@@ -1,6 +1,20 @@
 h1 {
 	font-weight: 700;
 	font-size: 5em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  /*font-style: bold;*/
+  font-weight: 400;
+  letter-spacing: 5px;
+	/*font-family: 'IM Fell Double Pica', serif;*/
+}
+
+h2 {
+	margin: 0px 0px 0px 0px;
+}
+
+.top {
+	letter-spacing: 2.4px;
 }
 
 p {
@@ -9,7 +23,12 @@ p {
 
 .content {
 	text-align: center;
-	padding-top: 15%;
+	padding-top: 21%;
+	font-family: 'IM Fell English SC', serif;
+	color: black;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.1),
+             0px 1px 1px rgba(0,0,0,0.1),
+             0px 1px 1px rgba(0,0,0,0.1);
 }
 
 .row {
@@ -23,12 +42,17 @@ p {
 }
 
 #cover {
-	background: url(../images/background.jpg);
+	background: url(../images/background-blur.jpg);
+	/*opacity: 0.60;*/
+	/*z-score: 99;*/
+	/*filter: alpha(opacity=90); /* For IE8 and earlier */*/
 	background-size: cover;				/* Adjust size */
 	background-position: center;	/* Adjust position */
+	background
 	font-family: "Lato";
 	color: white;
 }
+
 
 #timeline {
 	height: 300%;
@@ -36,7 +60,7 @@ p {
 }
 
 .fixed {
-	margin-left: 5%;
+	margin-left: 8%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -48,35 +72,39 @@ p {
 	margin-left: 5%;
 }*/
 
-.fixed li {
-	font-size: 15px;
-}
+/*.fixed li {
+	font-size: 2
+}*/
 
 .fixed li:nth-child(odd) {
 	padding: 0px;
-	margin-left: -14px;
+	margin-left: -17px;
 	list-style-type: none; 
 	border-left: 1px dashed grey;
-	height: 8.33%;
+	height: 7.5%;
 	/*height: 12.5%;*/
+}
+
+.timeline-dates {
+	font-family: 'IM Fell English SC', serif;
+	/*font-weight: 300;*/
+	font-size: 1.5em;
 }
 
 .date-container {
 	position: relative;
-	margin: 0% 10% 10% 25%;
+	margin: 0% 10% 10% 23%;
+	font-size: 1.8em;
+	font-weight: 500;
+	font-family: 'IM Fell Double Pica', serif;
+	/*display: inline-block;*/
+	/*vertical-align: top;*/
 }
 
-h2.date-info: {
-	height: 33%;
-	text-align: right;
-	vertical-align: text-bottom;
-	display: inline-block;
-	vertical-align: top;
+.date-info: {
+	/*height: 33%;*/
 }
 
-.date-info {
-	vertical-align: top;
-}
 
 p.blank {
 	height: 20%;

@@ -3,7 +3,8 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="css/slaveTree.css">
+	<link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica|IM+Fell+English+SC" rel="stylesheet">	
 </head>
 <body>
 	<div id="cover" class="page">
@@ -11,10 +12,11 @@
 			<div class="row">
 					<div class="col-lg-12">
 						<div class="content">
-							<h3>Meet the</h3>
+							<h2 class="top">meet the</h2>
 							<h1>GU272</h1>
-							<hr>
-							<button class="btn btn-default btn-lrg"><i class="fas fa-paw"></i> Get Started</button>
+							<h2 class="top">a digital exploration of</h2>
+							<h2> georgetown's slavery history </h2>
+							<!-- <h2> a digital exploration of georgetown's slavery history </h2> -->
 					</div>
 				</div>
 			</div>
@@ -22,30 +24,33 @@
 	</div>
 	<div id="timeline" class="page">
 		<div class="fixed">		
-			<ul>
+			<ul class="timeline-dates">
 				<li></li>
-				<li>1789</li>
+				<li id="date-1">1789</li>
 				<li></li>
-				<li>1838</li>
+				<li id="date-2">1838</li>
 				<li></li>
-				<li>2018</li>
+				<li id="date-3">2018</li>
 				<li></li>
 			</ul>
 		</div>
 		<div class="date-container">
 			<p class="blank"></p>
-			<div class="date-info">
+			<div id="date-info-1" class="date-info">
 				In 1789, ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			</div>
 			<p class="blank"></p>
-			<div class="date-info">In 1838, ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+			<div id="date-info-2" class="date-info">In June 1838, Fr. Thomas Mulledy agreed to sell 272 men, women, and children to Henry Johnson and Jesse Beatty of Louisiana. The articles of agreement identify the people by name and set out the terms of the sale.</div>
 			<p class="blank"></p>
-			<div class="date-info">In 2018, ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+			<div id="date-info-3" class="date-info">In 2018, ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 		</div>
 	</div>
+	<div id="family-tree" class="page"></div>
 	<div class="page">Leedle leedle</div>
-
 	<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/d3.v4.min.js"></script>
+	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/family-tree-viz.js"></script>
 </body>
 </html>
