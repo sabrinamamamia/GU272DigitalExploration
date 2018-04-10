@@ -71,7 +71,7 @@ id,family_key,full_name,first_name,last_name,birthdate,age,age_approx,farm_name,
 70,F15,Henrietta,Henrietta,,1831,7,,White Marsh,38.9830526,-76.7981457,,,,,female,
 71,F15,Hariet Ann,Hariet Ann,,1834,4,,White Marsh,38.9830526,-76.7981457,,,,,female,
 72,H16,Richard,Richard,,1800,38,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,,male,Ship 3
-73,,Nancy [strike through],Nancy [strike through],,1804,34,,White Marsh,38.9830526,-76.7981457,,,,dead,female,
+73,,Nancy,Nancy,,1804,34,,White Marsh,38.9830526,-76.7981457,,,,dead,female,
 74,H17,Margery,Margery,,1778,60,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,,female,Ship 3
 75,,Len,Len,,1800,38,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,ran away (sickly),male,Ship 3
 76,F18,Minty,Minty,,1812,26,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,married to freeman,female,Ship 3
@@ -79,21 +79,21 @@ id,family_key,full_name,first_name,last_name,birthdate,age,age_approx,farm_name,
 78,F18,Mary,Mary,,1836,1.5,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,,female,Ship 3
 79,,Garvis,Garvis,,1778,60,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,married off (Charles or Jarvis in bill of sale),male,Ship 3
 80,,James,James,,1788,50,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,married to freewoman,male,Ship 3
-81,,Tom,Tomx,,1793,45,,White Marsh,38.9830526,-76.7981457,,,,,male,
+81,,Tom,Tom,,1793,45,,White Marsh,38.9830526,-76.7981457,,,,,male,
 82,,Bill,Bill,,1796,42,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,?,Henry Johnson,William (Idiot) in bill of sale,male,Ship 3
 83,H19,Eliza,Eliza,,1812,26,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,married to freeman,female,Ship 3
 84,F19,Revidy,Revidy,,1831,7,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,Reverdy in bill of sale,male,Ship 3
 85,F19,Noble,Noble,,1833,5,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,,male,Ship 3
 86,F19,Edward,Edward,,1835,3,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,,male,Ship 3
 87,F19,William,William,,1835,3,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,age on bill of sale is 2,male,Ship 3
-88,,Regis [strike through],Regis [strike through],,1810,28,,White Marsh,38.9830526,-76.7981457,,,,carpenter,male,
+88,,Regis,Regis,,1810,28,,White Marsh,38.9830526,-76.7981457,,,,carpenter,male,
 89,,Maria,Maria,,1812,26,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,married off,female,Ship 3
 90,,Maria,Maria,,1833,5,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,,female,Ship 3
 91,,William,William,,1837,0.5,,White Marsh,38.9830526,-76.7981457,http://slaveryarchive.georgetown.edu/items/show/14,?,Henry Johnson,age on bill of sale is 2,male,Ship 3
-92,,Charles,Charlesx,,1763,75,,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,[strikeover][60],male,Ship 3
+92,,Charles,Charles,,1763,75,,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,[strikeover][60],male,Ship 3
 93,,Benedict,Benedict,,1773,65,,St. Thomas's Manor,38.465522,-77.023702,,,,,male,
 94,,Len Queen,Len,Queen,1788,50,,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,Surname confirmed by two documents,male,Ship 2
-95,,Sam Harris?,Sam,Harris,1808,30,,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,Could be Sam Harris (25),male,
+95,,Sam Harris,Sam,Harris,1808,30,,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,Could be Sam Harris (25),male,
 96,,John Butler,John,Butler,1803,35,,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,surname confirmed in two docs,male,Ship 3
 97,,John Coyle,John,Coyle,1817,21,,St. Thomas's Manor,38.465522,-77.023702,,,,Coyle,male,Ship 3
 98,,George Harris,George,Harris,1773,65,,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,Surname from bill of sale,male,
@@ -158,19 +158,19 @@ id,family_key,full_name,first_name,last_name,birthdate,age,age_approx,farm_name,
 157,,Remus,Remus,,1821,17,,Newtown,38.255697,-76.699983,http://slaveryarchive.georgetown.edu/items/show/12,,Henry Johnson,age listed as 18,male,
 158,,Milley,Milley,,1825,13,,Newtown,38.255697,-76.699983,http://slaveryarchive.georgetown.edu/items/show/12,,Henry Johnson,age listed as 14,female,
 159,,Lucy Ann,Lucy Ann,,1827,11,,Newtown,38.255697,-76.699983,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,,female,Ship 2
-160,,Luncina,Luncina [strike through Sal],,1828,10,,Newtown,38.255697,-76.699983,http://slaveryarchive.georgetown.edu/items/show/12,,Henry Johnson,,female,
+160,,Luncina,Luncina,,1828,10,,Newtown,38.255697,-76.699983,http://slaveryarchive.georgetown.edu/items/show/12,,Henry Johnson,,female,
 161,,Dina,Dina,,1830,8,,Newtown,38.255697,-76.699983,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,,female,Ship 2
-162,,Peg,Peg [strike through Esther],,1830,8,,Newtown,38.255697,-76.699983,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,listed as 6 in bill of sale,female,Ship 2
+162,,Peg,Peg,,1830,8,,Newtown,38.255697,-76.699983,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,listed as 6 in bill of sale,female,Ship 2
 163,,Alexius,Alexius,,1825,13,,Newtown,38.255697,-76.699983,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,,female,Ship 2
-164,,Child of 1,Child of 1,,1837,1,,Newtown,38.255697,-76.699983,,,,,u,
-165,,Child of 2 years old,Child of 2 years old,,1836,2,,Newtown,38.255697,-76.699983,,,,,u,
-166,,Nace Butler,Nace,Butler,1787,51,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,[strike thorugh (blacksmith)] listed as 50 in bill of sale,male,
+164,,Child,Child,,1837,1,,Newtown,38.255697,-76.699983,,,,,u,
+165,,Child,Child,,1836,2,,Newtown,38.255697,-76.699983,,,,,u,
+166,,Nace Butler,Nace,Butler,1787,50,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,[strike thorugh (blacksmith)] listed as 50 in bill of sale,male,
 167,,Nace Butler,Nace,(Butler),1818,20,,St. Inigoes,38.150421,-76.423851,,?,,ran away,male,
-168,,Biby Butler?,Biby,(Butler?),1793,45,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,listed with infant on bill of sale,female,Ship 2
+168,,Biby Butler,Biby,(Butler),1793,45,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,listed with infant on bill of sale,female,Ship 2
 169,,Suckey,Suckey,,1817,21,,St. Inigoes,38.150421,-76.423851,,,,,female,
 170,,Bridget,Bridget,,1821,17,,St. Inigoes,38.150421,-76.423851,,,,,female,
-171,,Caroline,Caroline,,1824,14,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,listed as 16,female,Ship 2
-172,,Basil,Basil,,1825,13,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,listed as 14,male,Ship 2
+171,,Caroline,Caroline,,1824,16,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,listed as 16 in bill of sales and 17 in manifest of kj,female,Ship 2
+172,,Basil,Basil,,1825,13,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,listed as 14 listed as Bazel/16,male,Ship 2
 173,,Martha Anne,Martha,,1827,11,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,"Listed 12, and with middle name",female,Ship 2
 174,,Anne,Anne,,1828,10,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,,female,Ship 2
 175,,Gabe,Gabe,,1830,8,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,listed as 9,male,Ship 2
@@ -224,7 +224,7 @@ id,family_key,full_name,first_name,last_name,birthdate,age,age_approx,farm_name,
 223,,Daniel,Daniel,,1834,4,,St. Inigoes,38.150421,-76.423851,,,,,male,
 224,,Bill,Bill,,1810,28,,St. Inigoes,38.150421,-76.423851,,,,not married,male,Ship 1
 225,F22,Watt,Watt,(Campbell),1793,45,,St. Inigoes,38.150421,-76.423851,,,,Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html,male,Ship 1
-226,F22,Teresa,Teresa [strike through Baney],(Campbell),1796,42,,St. Inigoes,38.150421,-76.423851,,,,Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html,female,Ship 1
+226,F22,Teresa,Teresa,(Campbell),1796,42,,St. Inigoes,38.150421,-76.423851,,,,Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html,female,Ship 1
 227,F22,Frank,Frank,(Campbell),1818,20,,St. Inigoes,38.150421,-76.423851,,,,Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html,male,Ship 1
 228,F22,Sam,Sam,(Campbell),1824,14,,St. Inigoes,38.150421,-76.423851,,,,Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html,male,Ship 1
 229,F22,Rachel,Rachel,(Campbell),1827,11,,St. Inigoes,38.150421,-76.423851,,,,Surname inferred from post-sale data: https://www.nytimes.com/2017/03/12/us/georgetown-university-slaves-life-campbell.html,female,Ship 1
@@ -238,36 +238,36 @@ id,family_key,full_name,first_name,last_name,birthdate,age,age_approx,farm_name,
 237,,Matt,Matt,,1828,10,,St. Inigoes,38.150421,-76.423851,,,,,male,
 238,,Ginny,Ginny,,1831,7,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/12,?,Henry Johnson,,female,
 239,,Catherine,Catherine,,1834,4,,St. Inigoes,38.150421,-76.423851,,,,,female,
-240,,Child Maria - 9 months,Maria,,1837,0.5,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/12,?,Henry Johnson,,female,
+240,,Maria,Maria,,1837,0.5,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/12,?,Henry Johnson,,female,
 241,H42,Nelly Barney,Nelly,Barney,1783,55,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,Surname from bill of sale,female,Ship 2
 242,F42,Eliza,Eliza,Barney,1816,22,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,"Could be Eliza Butler (19), listed with an infant",female,
 243,,Regis,Regis,,1810,28,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,married off,male,Ship 3
 244,,Kitty Walton,Kitty,Walton,1785,53,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/13,,Jesse Batey,Surname from bill of sale,female,Ship 1
 245,,Peter,Peter,,1801,37,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,married off,male,Ship 3
-246,,John [strike through] Brown,John [strike through],Brown ,1803,35,[strikeout],St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/12,?,Henry Johnson,Might be John Brown;  Surname from bill of sale,male,
+246,,John Brown,John,Brown ,1803,35,[strikeout],St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/12,?,Henry Johnson,Might be John Brown;  Surname from bill of sale,male,
 247,,Michael,Michael,,1805,33,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,married off,male,Ship 3
 248,,Ned,Ned,,1808,30,,St. Inigoes,38.150421,-76.423851,,,,,male,Ship 1
 249,,Sally,Sally,,1782,56,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/12,?,Henry Johnson,Age listed as 60 in bill of sale,female,
-250,,Alexius,.Alexius,,1802,36,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,married off,female,Ship 3
+250,,Alexius,Alexius,,1802,36,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,married off,female,Ship 3
 251,,Henry,Henry,,1816,22,,St. Inigoes,38.150421,-76.423851,,,,,male,Ship 1
 252,,Frederick,Frederick,,1818,20,,St. Inigoes,38.150421,-76.423851,,,,,male,Ship 1
 253,H30,Ginny,Ginny,,1819,19,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,married off,female,Ship 3
 254,F30,Girl,Girl,,1836,2,,St. Inigoes,38.150421,-76.423851,,,,,female,
 255,,Zeke,Zeke,,1806,32,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,married off;  Leke in the transcription of bill of sale,male,
 256,H32,Nathan,Nathan,,1774,64,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,,male,Ship 3
-257,F32,Henny [strike through],Henny [strike through],,1778,60,,St. Inigoes,38.150421,-76.423851,,,,married off,female,
+257,F32,Henny,Henny,,1778,60,,St. Inigoes,38.150421,-76.423851,,,,married off,female,
 258,,James,James,,1778,60,,St. Inigoes,38.150421,-76.423851,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,not married,male,Ship 3
-259,F23,Boy Charles - 1,Charles,,1837,1,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,name and age from bill of sale,male,
-260,F23,Boy Sam - 1,Sam,,1837,1,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,Is this Besty (Bess Hill_��s) missing infant Sam?,male,
-261,F23,Girl Nance - 8,Nance,,1830,8,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,name and age from bill of sale,female,
-262,F23,Girl Eliza - 10,Eliza ,,1828,10,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,name and age from bill of sale,female,
-263,F24,Girl Ellen - 4,Ellen,,1834,4,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,,female,
-264,F24,Girl Martha - 2,Martha ,,1836,2,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,,female,
+259,F23,Charles,Charles,,1837,1,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,name and age from bill of sale,male,
+260,F23,Sam,Sam,,1837,1,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,Is this Besty (Bess Hill_��s) missing infant Sam?,male,
+261,F23,Nance,Nance,,1830,8,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,name and age from bill of sale,female,
+262,F23,Eliza,Eliza ,,1828,10,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,name and age from bill of sale,female,
+263,F24,Ellen,Ellen,,1834,4,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,,female,
+264,F24,Martha,Martha ,,1836,2,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,,female,
 265,F25,Girl,Girl,,1832,6,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,age from bill of sale,female,
 266,F25,Girl,Girl,,1834,4,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,age from bill of sale,female,
 267,F25,Girl,Girl,,1836,1.5,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,age from bill of sale,female,
-268,F26,Boy Oswald - 5,Oswald,,1833,5,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,,male,
-269,F26,Girl Sarah - 10,Sarah  ,,1828,10,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,,female,
+268,F26,Oswald,Oswald,,1833,5,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,,male,
+269,F26,Sarah,Sarah  ,,1828,10,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/13,?,Jesse Batey,,female,
 270,F27,Girl,Girl,,1834,4,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,age from bill of sale,female,
 271,F28,Boy,Boy,,1830,8,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,age from bill of sale,male,
 272,F28,Boy,Boy,,1836,1.5,less than 4,St. Thomas's Manor,38.465522,-77.023702,http://slaveryarchive.georgetown.edu/items/show/14,,Henry Johnson,age from bill of sale,male,

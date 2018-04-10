@@ -54,63 +54,129 @@ p {
 }
 
 
-#timeline {
-	height: 300%;
+#history {
+	height: 350%;
 	/*height: 200%;*/
 }
 
 .fixed {
-	margin-left: 8%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   float: left;
-  width: 10%;
 }
 
-/*.fixed ul {
+#timeline {
+	width: 10%;
 	margin-left: 5%;
-}*/
-
-/*.fixed li {
-	font-size: 2
-}*/
-
-.fixed li:nth-child(odd) {
-	padding: 0px;
-	margin-left: -17px;
-	list-style-type: none; 
-	border-left: 1px dashed grey;
-	height: 7.5%;
-	/*height: 12.5%;*/
+}
+#map {
+	width: 40%;
+	float: left;
 }
 
-.timeline-dates {
-	font-family: 'IM Fell English SC', serif;
-	/*font-weight: 300;*/
-	font-size: 1.5em;
+ul.timeline-dates {
+	width: 10%;
+	list-style-type: none; 
+	float: left;
+}
+
+li.year {
+	margin: 5px 5px 5px -42px;
+	font-size: 1.4em;
+	font-weight: 800;
+}
+
+li.line {
+	padding: 0px;
+	margin-left: -18px;
+	border-left: 1px dashed grey;
+}
+
+li.date {
+	/*font-size: 1.6em;*/
+}
+
+li.short-line {
+	height: 2%;
+}
+
+li.long-line {
+	height: 6.3%;
+}
+
+.date  {
+	display: block;
+  width: 15px;
+  height: 15px;
+  margin: 5px 5px 5px -24px;
+  background: url(../images/circle.svg) no-repeat center;
+  opacity: 0.5;
+  background-size: 13px 13px;
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+
+.selected {
+	background: url(../images/circle-selected.svg) no-repeat center;
+	background-size: 13px 13px;
+	transition: background-image 0.3s ease-in-out;
+	display: block;
+}
+
+.selected-location {
+	display: block
+	transition: all 0.3s ease-in-out;
+}
+
+span {
+	display: none;
+	margin-left: 20px;
+	color: black;
+	font-size: 0.9em;
+}
+
+circle.location {
+/*	fill: lightblue;
+	stroke: black;*/
+	opacity: 0.6;
+	stroke: black;
+	transition: opacity 1s;
+}
+
+
+path.state {
+	fill: "lightgrey";
+}
+
+.state-selected {
+	fill: "darkolivegreen";
+	transition: opacity 0.4s;
 }
 
 .date-container {
-	position: relative;
-	margin: 0% 10% 10% 23%;
-	font-size: 1.8em;
+	width: 35%;
+	/*margin: 0% 10% 10% 20%;*/
+	/*margin-left: 15%;*/
+	float:left;
+	font-size: 1.4em;
 	font-weight: 500;
 	font-family: 'IM Fell Double Pica', serif;
-	/*display: inline-block;*/
-	/*vertical-align: top;*/
+	position: relative;
 }
 
 .date-info: {
 	/*height: 33%;*/
 }
 
-
 p.blank {
-	height: 20%;
+	height: 12%;
 }
 
-
+/*svg{
+    display: block;
+    margin: auto;
+}*/
 /*#one {
 	color: yellow;
 }*/

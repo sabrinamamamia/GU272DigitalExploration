@@ -1,0 +1,42 @@
+[	{
+		"name": "Georgetown University",
+		"lat": 38.9076,
+		"lon": -77.07225,
+		"count": 200
+	},
+	{
+		"name": "White Marsh",
+		"lat": 38.98305,
+		"lon": -76.79814,
+		"count": 91
+	}, 
+	{
+		"name": "St. Thomas's Manor",
+		"lat": 38.46552,
+		"lon": -77.0237,
+		"count": 50
+	}, 
+	{
+		"name": "Newtown",
+		"lat": 38.25569,
+		"lon": -76.69998,
+		"count": 44
+	}, 
+	{
+		"name": "St. Inigoes",
+		"lat": 38.15042,
+		"lon": -76.42385,
+		"count": 93
+	}, 
+	{
+		"name": "West Oak Plantation",
+		"lat": 30.4913,
+		"lon": -91.51955,
+		"count": 58
+	},
+	{
+		"name": "Chatham Plantation",
+		"lat": 30.18697,
+		"lon": -91.05949,
+		"count": 127
+}]

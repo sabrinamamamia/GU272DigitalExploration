@@ -86,11 +86,11 @@ a[aria-expanded="true"]::before {
   padding-left: 0px;
 }
 
-li:hover{
+/*li:hover{
   color: #f2f2f2;
   background: #fff;
   text-decoration: none;
-}
+}*/
 
 button {
   padding: 3px 8px;
@@ -103,11 +103,11 @@ button {
   position: absolute;
 }
 
-rect {
+/*rect {
   fill: lightblue;
   stroke: steelblue;
   stroke-width: 2px;
-}
+}*/
 
 .link {
   fill: none;
@@ -115,7 +115,7 @@ rect {
   stroke-width: 2px;
 }
 
-circle {
+circle.node {
   fill: lightblue;
   stroke: steelblue;
   stroke-width: 2px;

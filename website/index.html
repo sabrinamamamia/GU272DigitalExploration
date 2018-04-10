@@ -3,6 +3,7 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/demographics.css">
 	<link rel="stylesheet" type="text/css" href="css/slaveTree.css">
 	<link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica|IM+Fell+English+SC" rel="stylesheet">	
 </head>
@@ -22,35 +23,58 @@
 			</div>
 		</div>
 	</div>
-	<div id="timeline" class="page">
-		<div class="fixed">		
+	<div id="history" class="page">
+		<div id="timeline" class="fixed">
 			<ul class="timeline-dates">
-				<li></li>
-				<li id="date-1">1789</li>
-				<li></li>
-				<li id="date-2">1838</li>
-				<li></li>
-				<li id="date-3">2018</li>
-				<li></li>
+				<li class="line long-line"></li>
+				<li class="year">1838</li>
+				<li class="line short-line"></li>
+				<li>
+					<a href="#june1838" id="date-1" class="date" title="Scroll to January 1838"><span>June</span></a>
+				</li>
+				<li class="line short-line"></li>
+				<li>
+					<a href="#dec1838" id="date-2" class="date" title="Scroll to December 1838"><span>December</span></a>
+				</li>
+				<li class="line long-line"></li>
+				<li class="year">1848</li>
+				<li class="line short-line"></li>
+				<li>
+					<a href="#mar1848" id="date-3" class="date" title="Scroll to April 1863"><span>March</span></a>
+				</li>
+				<li class="line long-line"></li>
 			</ul>
 		</div>
 		<div class="date-container">
-			<p class="blank"></p>
-			<div id="date-info-1" class="date-info">
-				In 1789, ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			<p id= "blank-1" class="blank"></p>
+			<div id="date-info-1" class="date-info" >
+				In June 1838, Georgetown president and Jesuit priest Fr. Thomas Mulledy agreed to sell 272 men, women, and children. They were sold to Henry Johnson, a member of the House of Representatives, and Jesse Beatty, a landowner in Louisiana. The sale was worth about $3.3 million in today's dollars. 
 			</div>
-			<p class="blank"></p>
-			<div id="date-info-2" class="date-info">In June 1838, Fr. Thomas Mulledy agreed to sell 272 men, women, and children to Henry Johnson and Jesse Beatty of Louisiana. The articles of agreement identify the people by name and set out the terms of the sale.</div>
-			<p class="blank"></p>
-			<div id="date-info-3" class="date-info">In 2018, ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+			<p id="blank-2" class="blank"></p>
+			<div id="date-info-2" class="date-info">In Dec. 1838, a group of the slaves were transported from Alexandria to New Orleans on the ship manifest of the Katharine Jackson. The cargo included dozens of children, among them infants as young as 2 months old. They were shipped by Robert A. Windsor of Alexandria and consigned to Lambeth and Thompson of New Orleans.</div>
+			<p id="blank-3"class="blank"></p>
+			<div id="date-info-3" class="date-info">
+			In March 1848, Reverend James Van de Velde lamented that the religious instruction of the slaves sold to Henry Johnson has been neglected. He urges Jesuit leaders to send money for the construction of a church that would "provide for the salvation of those poor people, who are now utterly neglected." 
+			</div>
+			<p id="blank-4"class="blank"></p>
+			<div id="date-info-4" class="date-info">In 2018, ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 		</div>
+		<div id="map" class="fixed"></div>
+
+	</div>
+	<div id="demographics" class="page">
+		<div id="pie"></div>
+		<div id="bar"></div>
+		<div id="scatter"></div>
 	</div>
 	<div id="family-tree" class="page"></div>
-	<div class="page">Leedle leedle</div>
+	
 	<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/d3.v4.min.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/demographics.js"></script>
 	<script type="text/javascript" src="js/family-tree-viz.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 
 var margin = {top: 40, right: 0, bottom: 150, left: 100},
     width = 1250 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom;
+    height = 650 - margin.top - margin.bottom;
 
 //Append svg and g elements to body
 var svg = d3.select("#family-tree").append("svg")
@@ -49,7 +49,7 @@ var data = d3.json("/data/filtered-gu272-data.json", function(error, json) {
 			root.x0 = height/2;
 			root.y0 = 0;
 
-			var tree = d3.tree().size([height/2.5, width/2.5]);
+			var tree = d3.tree().size([height/3, width/2.5]);
 
 			update(root);
 
