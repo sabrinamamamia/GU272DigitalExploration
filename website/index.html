@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/demographics.css">
 	<link rel="stylesheet" type="text/css" href="css/slaveTree.css">
-	<link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica|IM+Fell+English+SC" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica|IM+Fell+English+SC|Oswald" rel="stylesheet">	
 </head>
 <body>
 	<div id="cover" class="page">
@@ -16,7 +16,7 @@
 							<h2 class="top">meet the</h2>
 							<h1>GU272</h1>
 							<h2 class="top">a digital exploration of</h2>
-							<h2> georgetown's slavery history </h2>
+							<h2> georgetown's history of slavery</h2>
 							<!-- <h2> a digital exploration of georgetown's slavery history </h2> -->
 					</div>
 				</div>
@@ -27,54 +27,83 @@
 		<div id="timeline" class="fixed">
 			<ul class="timeline-dates">
 				<li class="line long-line"></li>
+				<li class="year">1634</li>
+				<li class="line short-line"></li>
+				<li>
+					<a href="#1634" id="date-1" class="date" title="Scroll to 1634"><span>1634</span></a>
+				</li>
+				<li class="line short-line"></li>
+				<li class="year">1789</li>
+				<li class="line short-line"></li>
+				<li>
+					<a href="#1789" id="date-2" class="date" title="Scroll to 1789"><span>1789</span></a>
+				</li>
+				<li class="line short-line"></li>
 				<li class="year">1838</li>
 				<li class="line short-line"></li>
 				<li>
-					<a href="#june1838" id="date-1" class="date" title="Scroll to January 1838"><span>June</span></a>
+					<a href="#jun1838" id="date-3" class="date" title="Scroll to June 1838"><span>June 1838</span></a>
 				</li>
 				<li class="line short-line"></li>
 				<li>
-					<a href="#dec1838" id="date-2" class="date" title="Scroll to December 1838"><span>December</span></a>
-				</li>
-				<li class="line long-line"></li>
-				<li class="year">1848</li>
-				<li class="line short-line"></li>
-				<li>
-					<a href="#mar1848" id="date-3" class="date" title="Scroll to April 1863"><span>March</span></a>
+					<a href="#dec1838" id="date-4" class="date" title="Scroll to Dec 1838"><span>Dec 1838</span></a>
 				</li>
 				<li class="line long-line"></li>
 			</ul>
 		</div>
 		<div class="date-container">
 			<p id= "blank-1" class="blank"></p>
-			<div id="date-info-1" class="date-info" >
-				In June 1838, Georgetown president and Jesuit priest Fr. Thomas Mulledy agreed to sell 272 men, women, and children. They were sold to Henry Johnson, a member of the House of Representatives, and Jesse Beatty, a landowner in Louisiana. The sale was worth about $3.3 million in today's dollars. 
+			<div id="date-info-1" class="date-info">
+				In 1634, the first group of Jesuits settled in Maryland. The Jesuits received land grants to manage farms that indentured servants worked on. As the tobacco economy grew, indentured workers were increasingly replaced by enslaved Africans. By the 19th century, the Jesuits became one of the largest landlords and slaveowners in Maryland. 
 			</div>
 			<p id="blank-2" class="blank"></p>
-			<div id="date-info-2" class="date-info">In Dec. 1838, a group of the slaves were transported from Alexandria to New Orleans on the ship manifest of the Katharine Jackson. The cargo included dozens of children, among them infants as young as 2 months old. They were shipped by Robert A. Windsor of Alexandria and consigned to Lambeth and Thompson of New Orleans.</div>
+			<div id="date-info-2" class="date-info">
+				In 1789, Georgetown University was founded by John Carroll, the first Catholic bishop in the United States. Many of Georgetown's early directors and presidents owned enslaved Africans on Maryland plantations. Four of these plantations were White Marsh, St. Thomas, Newtown, and St. Inigoes.
+			</div>
+			<p class="blank"></p>
 			<p id="blank-3"class="blank"></p>
 			<div id="date-info-3" class="date-info">
-			In March 1848, Reverend James Van de Velde lamented that the religious instruction of the slaves sold to Henry Johnson has been neglected. He urges Jesuit leaders to send money for the construction of a church that would "provide for the salvation of those poor people, who are now utterly neglected." 
+				In June 1838, Georgetown president and Jesuit priest Fr. Thomas Mulledy agreed to sell 272 enslaved men, women, and children to pay off the university's debts. The buyers were Henry Johnson, a member of the House of Representatives, and Jesse Beatty, a landowner in Louisiana. The enslaved people would be sent to Louisiana to work on sugar plantations. The sale was worth about $3.3 million in today's dollars. 
 			</div>
 			<p id="blank-4"class="blank"></p>
-			<div id="date-info-4" class="date-info">In 2018, ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+			<div id="date-info-4" class="date-info">
+				In Dec. 1838, a group of the enslaved individuals were transported from Maryland to Louisiana on the ship manifest of the Katharine Jackson. The cargo included dozens of children, among them infants as young as 2 months old. They were shipped by Robert A. Windsor of Alexandria and consigned to Lambeth and Thompson of New Orleans.
+			<br><br>
+				<div class="button">
+				<button onclick="animateMap()">Play route</button>
+				</div>
+			</div>
 		</div>
+		<div id="timeline-images" class="fixed">
+			<a class="historic-map"></a>
+		</div>
+		<p class="blank"></p>
 		<div id="map" class="fixed"></div>
-
 	</div>
 	<div id="demographics" class="page">
-		<div id="pie"></div>
-		<div id="bar"></div>
-		<div id="scatter"></div>
+		<div class="heading fixed">
+			<span class="gu272">GU272</span> 
+			<span class="category">| Demographics</span>
+		</div>
+		<div id="pie" class="fixed-charts"></div>
+		<div id="bar" class="fixed-charts"></div>
+		<div id="scatter" class="fixed-charts"></div>
 	</div>
-	<div id="family-tree" class="page"></div>
+	<div id="family-tree" class="page">
+	<div class="heading fixed">
+		<span class="gu272">GU272</span> 
+		<span class="category">| Family Trees</span>
+	</div>
+	</div>
+
+</div>
 	
 	<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/d3.v4.min.js"></script>
 	<script type="text/javascript" src="js/map.js"></script>
-	<script type="text/javascript" src="js/navigation.js"></script>
 	<script type="text/javascript" src="js/demographics.js"></script>
 	<script type="text/javascript" src="js/family-tree-viz.js"></script>
+	<script type="text/javascript" src="js/navigation.js"></script>
 </body>
 </html>

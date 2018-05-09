@@ -1,16 +1,31 @@
 h1 {
-	font-weight: 700;
 	font-size: 5em;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
-  Helvetica, Arial, "Lucida Grande", sans-serif;
-  /*font-style: bold;*/
-  font-weight: 400;
-  letter-spacing: 5px;
-	/*font-family: 'IM Fell Double Pica', serif;*/
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  letter-spacing: 7px;
 }
 
 h2 {
 	margin: 0px 0px 0px 0px;
+}
+
+.heading {
+  height: 6%;
+  width: 100%;
+  padding: 2% 0% 0% 4%;
+  z-index: 1;
+}
+
+.heading .gu272 {
+	font-family: 'Oswald', sans-serif;
+  font-size: 2.5em;
+	font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.heading .category {
+	font-family: 'IM Fell English SC', serif;
+	font-size: 2.7em;
 }
 
 .top {
@@ -43,9 +58,6 @@ p {
 
 #cover {
 	background: url(../images/background-blur.jpg);
-	/*opacity: 0.60;*/
-	/*z-score: 99;*/
-	/*filter: alpha(opacity=90); /* For IE8 and earlier */*/
 	background-size: cover;				/* Adjust size */
 	background-position: center;	/* Adjust position */
 	background
@@ -53,10 +65,13 @@ p {
 	color: white;
 }
 
-
 #history {
-	height: 350%;
+	height: 400%;
 	/*height: 200%;*/
+}
+
+#demographics {
+	height: 200%;
 }
 
 .fixed {
@@ -66,13 +81,35 @@ p {
   float: left;
 }
 
+/*.fixed-bottom {
+	position: -webkit-sticky;
+  position: sticky;
+  bottom: 30%;
+  float: left;
+}*/
+
 #timeline {
-	width: 10%;
+	width: 4%;
 	margin-left: 5%;
 }
+
+.button {
+	text-align: center;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 700;
+  font-size: 0.7em;
+}
+
 #map {
 	width: 40%;
 	float: left;
+	margin-top: 19%
+}
+
+.map-legend {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  font: 11px sans-serif;
 }
 
 ul.timeline-dates {
@@ -93,16 +130,27 @@ li.line {
 	border-left: 1px dashed grey;
 }
 
-li.date {
-	/*font-size: 1.6em;*/
+/*.date {
+	display: none;
+	margin-left: 20px;
+	color: black;
+	font-size: 0.9em;
+}*/
+
+/*span {
+	display: none;
+	margin-left: 20px;
+	color: black;
+	font-size: 0.9em;
 }
+*/
 
 li.short-line {
-	height: 2%;
+	height: 1.4%;
 }
 
 li.long-line {
-	height: 6.3%;
+	height: 5.1%;
 }
 
 .date  {
@@ -117,6 +165,13 @@ li.long-line {
   transition: opacity 0.4s;
 }
 
+.date > span {
+	display: none;
+	margin-left: 20px;
+	color: black;
+	font-size: 0.9em;
+}
+
 .selected {
 	background: url(../images/circle-selected.svg) no-repeat center;
 	background-size: 13px 13px;
@@ -124,39 +179,89 @@ li.long-line {
 	display: block;
 }
 
+#timeline-images {
+	height: 33%;
+	width: 50%;
+	/*margin-top: 10%;*/
+}
+
+.historic-map {
+/*	visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;*/
+  display: block;
+  transition: opacity 0.5s ease-in, opacity 0.5s ease-out, background-image 0.5s ease-out;
+  opacity: 0; 
+  height: 0;
+  overflow: hidden;
+
+ /* width: 100%;
+  height: 100%;*/
+  margin: -16% 0% 0% 0%;
+  background: url(../images/jesuit-map.jpg) no-repeat center;
+  /*opacity: 0.5;*/
+  background-size: 80%;
+/*  cursor: pointer;
+  -webkit-transition: background-image 0.4s ease-in-out;
+	transition: background-image 0.4s ease-in-out;*/
+}
+
+.active {
+	opacity: 1;
+  width: auto;
+  height: 100%;
+}
+
+.historic-map-selected {
+	opacity: 1;
+  width: 100%;
+  height: 100%;
+  margin: -16% 0% 0% 0%;
+	background: url(../images/jesuit-map-selected.jpg) no-repeat center;
+	background-size: 80%;
+  cursor: pointer;
+	transition: opacity 0.5s ease-in, opacity 0.5s ease-out, background-image 0.5s ease-out;
+}
+
+#bill-of-sale {
+	display: block;
+  width: 10%;
+  height: 10%;
+  margin: -16% 0% 0% 0%;
+/*	background: url(../images/bill-of-sale.jpg) no-repeat center;
+	background-size: 90%;
+  cursor: pointer;
+	transition: background-image 0.5s ease-in-out;*/
+}
+
+.bill-of-sale {
+	display: block;
+  width: 100%;
+  height: 100%;
+  margin: -17% 0% 0% 0%;
+	background: url(../images/bill-of-sale.jpg) no-repeat center;
+	background-size: 90%;
+  cursor: pointer;
+	transition: background-image 0.5s ease-in-out;
+}
+
 .selected-location {
 	display: block
 	transition: all 0.3s ease-in-out;
 }
 
-span {
-	display: none;
-	margin-left: 20px;
-	color: black;
-	font-size: 0.9em;
-}
-
-circle.location {
-/*	fill: lightblue;
-	stroke: black;*/
-	opacity: 0.6;
-	stroke: black;
-	transition: opacity 1s;
-}
-
-
-path.state {
+/*path.state {
 	fill: "lightgrey";
 }
 
 .state-selected {
 	fill: "darkolivegreen";
 	transition: opacity 0.4s;
-}
+}*/
 
 .date-container {
-	width: 35%;
-	/*margin: 0% 10% 10% 20%;*/
+	width: 33%;
+	margin: 0% 4% 10% 4%;
 	/*margin-left: 15%;*/
 	float:left;
 	font-size: 1.4em;
@@ -170,7 +275,7 @@ path.state {
 }
 
 p.blank {
-	height: 12%;
+	height: 10%;
 }
 
 /*svg{

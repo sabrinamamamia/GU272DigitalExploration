@@ -121,7 +121,7 @@ circle.node {
   stroke-width: 2px;
 }
 
-text {
+.name {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
   font: 11px sans-serif;

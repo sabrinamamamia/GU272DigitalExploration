@@ -1,5 +1,5 @@
 
-var margin = {top: 40, right: 0, bottom: 150, left: 100},
+var margin = {top: 70, right: 0, bottom: 150, left: 100},
     width = 1250 - margin.left - margin.right,
     height = 650 - margin.top - margin.bottom;
 
@@ -94,6 +94,7 @@ var data = d3.json("/data/filtered-gu272-data.json", function(error, json) {
 
 			  // Add labels for the nodes
 			  nodeEnter.append("text")
+			  		.attr("class", "name")
 			      .attr("dy", ".35em")
 			      .attr("x", function(d) {
 			          return d.children || d._children ? -13 : 13; })

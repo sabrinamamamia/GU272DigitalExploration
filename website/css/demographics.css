@@ -1,23 +1,18 @@
 /* Pie Chart */
 
+#pie {
+  padding-top: 10%;
+  padding-left: 15%;
+  top: 15%;
+}
+
 .pie {
-  margin-left: 170px;
-  margin-top: 15%;
-  /*margin-right: 150px;*/
-/* 	height: 20%;
-	width: 20%;*/
+  opacity: 0.9;
+  
 }
 
-svg {
-  float: left;
-}
-
-.legend {
-  float: left;
-  font-family: "Verdana";
+.pie-legend {
   font-size: .7em;
-  margin-right: 50px;
-  margin-top: 15%
 }
 
 .pie text {
@@ -34,17 +29,36 @@ svg {
 }
 
 /* Bar chart */
+#bar {
+  padding-left: 39%;
+  top: 34%;
+}
 
-.bar {
+.bar { 
   opacity: 0.85;
   margin-right: 55px;
-  margin-top: 15%
+/*  margin-top: 15%*/
 }
 
 .bar:hover {
   opacity: 1
 }
 
-.scatter {
-  margin-top: 15%
+#scatter {
+  padding-left: 65%;
+  top: 34%;
+}
+
+.fixed-charts {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30%;
+  width: fit-content;
+}
+
+.chart-title {
+  margin: 0% 50% 2% 0%;
+  float: left;
+  font-weight: bold;
+  font-size: 1.2em;
 }

@@ -5,7 +5,8 @@ var data = d3.csv("data/gu272.csv", function(data) {
 			femaleCount = 0,
 			adultFemale = 0,
 			adultMale = 0,
-			child = 0;
+			childMale = 0;
+			childFemale = 0;
 
 	for (var i = 0; i < data.length; i++) {
 		if (data[i].gender == 'male') {
@@ -13,7 +14,7 @@ var data = d3.csv("data/gu272.csv", function(data) {
 			if (data[i].age >= 21) {
 				adultMale++; 
 			} else {
-				child++;
+				childMale++;
 			}
 		}
 		else if (data[i].gender == 'female') {
@@ -21,23 +22,25 @@ var data = d3.csv("data/gu272.csv", function(data) {
 			if (data[i].age >= 21) {
 				adultFemale++; 
 			} else {
-				child++;
+				childFemale++;
 			}
 		}
 	}
 
-	var totalCount = adultFemale + adultMale + child;
+	var totalCount = adultFemale + adultMale + childMale + childFemale;
 
 	// console.log(maleCount + " " + femaleCount)
-	genderData = [{"gender": "Male", "value": maleCount}, {"gender": "Female", "value": femaleCount}];
-	famData = [{"member": "Father", "value":adultMale/totalCount}, {"member": "Mother", "value": adultFemale/totalCount},
-	{"member": "Child", "value":child/totalCount}];
+	genderData = [{"gender": "Male", "value": maleCount}, {"gender": "Female", "value": femaleCount-1}];
+	famData = [{"member": "Men", "value":adultMale/totalCount}, 
+		{"member": "Women", "value": adultFemale/totalCount},
+		{"member": "Boys", "value":childMale/totalCount},
+		{"member": "Girls", "value":childFemale/totalCount}];
 	// console.log(famData)
 
 	// var width = 200;
 	// var height = 200;
 
-	var margin = {top: 20, right: 20, bottom: 30, left: 40},
+	var margin = {top: 20, right: 20, bottom: 20, left: 20},
 	    width = 250 - margin.left - margin.right,
 	    height = 255 - margin.top - margin.bottom;
 
@@ -51,13 +54,18 @@ var data = d3.csv("data/gu272.csv", function(data) {
 
 	var radius = Math.min(width-padding, height-padding) / 2;
 	// var color = d3.scaleOrdinal(d3.schemeCategory10);
-	var color = d3.scaleOrdinal(["rgb(31, 119, 180)", "rgb(214, 39, 40)"]);
+	var color = d3.scaleOrdinal(["rgb(31, 119, 180)", "rgb(214, 39, 40)", "grey"]);
+
+	d3.select("#pie")
+		.append('text')
+		.text("Gender")
+		.attr("class", "chart-title");
 
 	var svg = d3.select("#pie")
-	.append('svg')
-	.attr('class', 'pie')
-	.attr('width', width)
-	.attr('height', height);
+		.append('svg')
+		.attr('class', 'pie')
+		.attr('width', width)
+		.attr('height', height);
 
 	var g = svg.append('g')
 	.attr('transform', 'translate(' + (width/2) + ',' + (height/2) + ')');
@@ -147,7 +155,7 @@ var data = d3.csv("data/gu272.csv", function(data) {
 	  .each(function(d, i) { this._current = i; });
 
 		let legend = d3.select("#pie").append('div')
-					.attr('class', 'legend');
+					.attr('class', 'pie-legend');
 
 		let keys = legend.selectAll('.key')
 					.data(genderData)
@@ -174,8 +182,8 @@ var data = d3.csv("data/gu272.csv", function(data) {
 
 // set the dimensions and margins of the graph
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 225 - margin.left - margin.right,
-    height = 225 - margin.top - margin.bottom;
+    width = 250 - margin.left - margin.right,
+    height = 250 - margin.top - margin.bottom;
 
 // set the ranges
 var x = d3.scaleBand()
@@ -187,6 +195,12 @@ var y = d3.scaleLinear()
 // append the svg object to the body of the page
 // append a 'group' element to 'svg'
 // moves the 'group' element to the top left margin
+
+d3.select("#bar")
+.append('text')
+.text("Age")
+.attr("class", "chart-title");
+
 var svg = d3.select("#bar").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -223,8 +237,19 @@ var svg = d3.select("#bar").append("svg")
   // add the y Axis
   svg.append("g")
       .call(d3.axisLeft(y));
+});
+
+var data = d3.csv("data/age-height-data.csv", function(ageHeightData) {
+
+var margin = {top: 20, right: 40, bottom: 20, left: 30},
+    width = 280 - margin.left - margin.right,
+    height = 250 - margin.top - margin.bottom;
 
 // Scatterplot
+d3.select("#scatter")
+.append('text')
+.text("Age v. Height")
+.attr("class", "chart-title");
 
 // set the ranges
 var x = d3.scaleLinear().range([0, width]);
@@ -242,16 +267,38 @@ var svg = d3.select("#scatter").append("svg")
           "translate(" + margin.left + "," + margin.top + ")");
 
   // Scale the range of the data
-  x.domain(d3.extent(data, function(d) { return d.age; }));
-  y.domain([d3.min(data, function(d) { return d.birthdate; }), d3.max(data, function(d) { return d.birthdate; })]);
+  // x.domain(d3.extent(data, function(d) { return d.age; }));
+  // y.domain([d3.min(data, function(d) { return d.birthdate; }), d3.max(data, function(d) { return d.birthdate; })]);
+
+  x.domain(d3.extent(ageHeightData, function(d) { return parseInt(d.age); }));
+  y.domain([d3.min(ageHeightData, function(d) { 
+  	var feet = parseInt(d.height.split("-")[0])
+    var inches = parseInt(d.height.split("-")[1])
+  	return feet + (inches / 12); 
+  }), d3.max(ageHeightData, function(d) {
+  	var feet = parseInt(d.height.split("-")[0])
+    var inches = parseInt(d.height.split("-")[1])
+  	return feet + (inches / 12); 
+  })]);
       
   // Add the scatterplot
   svg.selectAll("dot")
-      .data(data)
+      .data(ageHeightData)
     .enter().append("circle")
-      .attr("r", 1)
-      .attr("cx", function(d) { return x(d.age); })
-      .attr("cy", function(d) { return y(d.birthdate); });
+      .attr("r", 1.5)
+      .attr("cx", function(d) { 
+      	if (d.age != "") {
+      		return x(parseInt(d.age)); 
+      	}
+      })
+      .attr("cy", function(d) { 
+      	if (d.height != "") {
+      	var feet = parseInt(d.height.split("-")[0])
+      	var inches = parseInt(d.height.split("-")[1])
+      		return y(feet + (inches / 12))
+      	}
+      })
+      .attr("fill", "darkgrey");
 
   // Add the X Axis
   svg.append("g")
