@@ -1,0 +1,37 @@
+/*Walkthrough modals*/
+.full-screen-modal {
+    width: 100VW;
+    height: 100VH;
+    background: black;
+    opacity: 0.6;
+    position: absolute;
+    z-index: 1000;
+}
+.hidden-modal {
+    display: none;
+}
+.welcome-modal-screen {
+    width: 50VW;
+    height: 50VH;
+    top: 27%;
+    background: white;
+    left: 25%;
+    position: absolute;
+    z-index: 1200;
+    padding: 40px;
+}
+.welcome-title {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.enjoyhint_close_btn {
+    display: none !important;
+}
+.popover.tour-tour.tour-tour-0.fade {
+    opacity: 1;
+}
+.typeahead.dropdown-menu {
+    z-index: 1200;
+}

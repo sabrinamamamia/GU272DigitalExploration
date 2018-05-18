@@ -1,0 +1,242 @@
+h1 {
+	font-size: 9vh;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  letter-spacing: 7px;
+  margin: 10px 10px 10px 10px;
+}
+
+h2 {
+	font-size: 5vh;
+	margin: 0px 0px 0px 0px;
+}
+
+h3 {
+	font-family: 'Oswald', sans-serif;
+  font-size: 2.5em;
+}
+
+.heading {
+  height: 6%;
+  width: 100%;
+  padding: 2% 0% 0% 4%;
+  z-index: 1;
+}
+
+.heading .gu272 {
+	font-family: 'Oswald', sans-serif;
+  font-size: 2.5em;
+	font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.heading .category {
+	font-family: 'IM Fell English SC', serif;
+	font-size: 2.7em;
+}
+
+.top {
+	letter-spacing: 2.4px;
+}
+
+p {
+	margin: 0px 0px 0px 0px;
+}
+
+.content {
+	text-align: center;
+	padding-top: 30vh;
+	font-family: 'IM Fell English SC', serif;
+	color: black;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.1),
+             0px 1px 1px rgba(0,0,0,0.1),
+             0px 1px 1px rgba(0,0,0,0.1);
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.page {
+	height: 100%;
+	width: 100%;
+}
+
+#cover {
+	background: url(../images/background-blur.jpg);
+	background-size: cover;				/* Adjust size */
+	background-position: center;	/* Adjust position */
+	font-family: "Lato";
+	color: white;
+}
+
+#history {
+	height: 400%;
+	/*height: 200%;*/
+}
+
+#demographics {
+	height: 200%;
+}
+
+.fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  float: left;
+}
+
+#timeline {
+	width: 4%;
+	margin-left: 5%;
+}
+
+.button {
+	text-align: center;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 700;
+  font-size: 0.7em;
+}
+
+#map {
+	width: 40%;
+	float: left;
+	margin-top: 25%
+}
+
+.map-legend {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  font: 11px sans-serif;
+}
+
+ul.timeline-dates {
+	width: 10%;
+	list-style-type: none; 
+	float: left;
+}
+
+li.year {
+	margin: 5px 5px 5px -42px;
+	font-size: 1.4em;
+	font-weight: 800;
+}
+
+li.line {
+	padding: 0px;
+	margin-left: -18px;
+	border-left: 1px dashed grey;
+}
+
+li.short-line {
+	height: 1.4%;
+}
+
+li.long-line {
+	height: 5.1%;
+}
+
+.date  {
+	display: block;
+  width: 15px;
+  height: 15px;
+  margin: 5px 5px 5px -24px;
+  background: url(../images/circle.svg) no-repeat center;
+  opacity: 0.5;
+  background-size: 13px 13px;
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+
+.date > span {
+	display: none;
+	margin-left: 20px;
+	color: black;
+	font-size: 0.9em;
+}
+
+.selected {
+	background: url(../images/circle-selected.svg) no-repeat center;
+	background-size: 13px 13px;
+	transition: background-image 0.3s ease-in-out;
+	display: block;
+}
+
+#timeline-images {
+	height: 100vh;       /* Nav bar takes up 8vh. 100 - 8 = 82vh */ 
+	width: 50vw;
+	margin-top: 55px;	  /* Header height */
+}
+
+.historic-map {
+  display: block;
+  transition: opacity 0.5s ease-in, opacity 0.5s ease-out, background-image 0.5s ease-out;
+  opacity: 0; 
+  height: 0;
+  overflow: hidden;
+	opacity: 1;
+  width: auto;
+  height: 100%;
+  margin-top: 4vh;
+  background: url(../images/jesuit-map.jpg) no-repeat center;
+  background-size: 75vh;
+}
+
+.active {
+	opacity: 1;
+  width: auto;
+  height: 100%;
+}
+
+.historic-map-selected {
+	opacity: 1;
+  width: 100%;
+  height: 100%;
+  margin-top: 4vh;
+	background: url(../images/jesuit-map-selected.jpg) no-repeat center;
+	background-size: 75vh;
+	transition: opacity 0.5s ease-in, opacity 0.5s ease-out, background-image 0.5s ease-out;
+}
+
+#bill-of-sale {
+	display: block;
+  width: 10%;
+  height: 10%;
+  margin: -16% 0% 0% 0%;
+}
+
+.bill-of-sale {
+	display: block;
+  width: 100%;
+  height: 100%;
+  margin: -17% 0% 0% 0%;
+	background: url(../images/bill-of-sale.jpg) no-repeat center;
+	background-size: 90%;
+  cursor: pointer;
+	transition: background-image 0.5s ease-in-out;
+}
+
+.selected-location {
+	display: block;
+	transition: all 0.3s ease-in-out;
+}
+
+.date-container {
+	width: 33%;
+	margin: 0% 4% 10% 4%;
+	/*margin-left: 15%;*/
+	float:left;
+	font-size: 1.4em;
+	font-weight: 500;
+	font-family: 'IM Fell Double Pica', serif;
+	position: relative;
+}
+
+.date-info {
+	/*height: 33%;*/
+}
+
+p.blank {
+	height: 10%;
+}

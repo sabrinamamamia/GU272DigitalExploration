@@ -1,0 +1,132 @@
+.wrapper {
+    display: flex;
+    /* stretch equalizes both page content and sidebar height */
+    align-items: stretch;  
+}  
+
+#sidebar {
+    min-width: 300px;
+    max-width: 300px;
+    transition: all 0.4s; 
+}
+
+#sidebar .sidebar-header {
+  padding: 30px;
+  text-align: left;
+  background: steelblue;
+}
+
+#sidebar h3 {
+  font-size: 30px;
+  color: white;
+}
+
+#sidebar .sidebar-content {
+  /*padding: 20px;*/
+  text-align: left;
+  background: #4679b4d9;
+  min-height: 100vh;
+  color: #f2f2f2;
+}
+
+#sidebar .sidebar-content p {
+  padding: 20px;
+}
+
+#sidebar.active {
+  margin-left: -300px;
+}
+
+/* sidebar hidden by default for smaller screens */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -300px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+#sidebar ul li {
+  padding: 10px;
+  display: block;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+/*a {
+  color: #f2f2f2;
+}*/
+
+a:hover, a:focus {
+    color: steelblue;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    color: #f2f2f2;
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: -106px;
+    bottom: 0px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+#sidebar .sidebar-links {
+  list-style: none;
+  padding-left: 0px;
+}
+
+button {
+  padding: 3px 8px;
+  align: right;
+}
+
+#sidebarCollapsed {
+  margin: 38px 0px 0px 38px;
+  display: none;
+  position: absolute;
+}
+
+.family-link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+
+circle.person-node {
+  fill: lightblue;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+text.name {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  font: 11px sans-serif;
+  cursor: pointer;
+  fill: "black";
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  height: 45px;
+  padding: 3px;
+  font: 11px sans-serif;
+  background: #c8d1dd;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+
