@@ -1,22 +1,4 @@
-h1 {
-	font-size: 9vh;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  letter-spacing: 7px;
-  margin: 10px 10px 10px 10px;
-}
-
-h2 {
-	font-size: 5vh;
-	margin: 0px 0px 0px 0px;
-}
-
-h3 {
-	font-family: 'Oswald', sans-serif;
-  font-size: 2.5em;
-}
-
-.heading {
+/*.heading {
   height: 6%;
   width: 100%;
   padding: 2% 0% 0% 4%;
@@ -33,64 +15,36 @@ h3 {
 .heading .category {
 	font-family: 'IM Fell English SC', serif;
 	font-size: 2.7em;
-}
-
-.top {
-	letter-spacing: 2.4px;
-}
-
-p {
-	margin: 0px 0px 0px 0px;
-}
-
-.content {
-	text-align: center;
-	padding-top: 30vh;
-	font-family: 'IM Fell English SC', serif;
-	color: black;
-  text-shadow: 0px 1px 1px rgba(0,0,0,0.1),
-             0px 1px 1px rgba(0,0,0,0.1),
-             0px 1px 1px rgba(0,0,0,0.1);
-}
-
-.row {
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
-.page {
-	height: 100%;
-	width: 100%;
-}
-
-#cover {
-	background: url(../images/background-blur.jpg);
-	background-size: cover;				/* Adjust size */
-	background-position: center;	/* Adjust position */
-	font-family: "Lato";
-	color: white;
-}
+}*/
 
 #history {
 	height: 400%;
 	/*height: 200%;*/
 }
 
-#demographics {
-	height: 200%;
-}
-
-.fixed {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  float: left;
-}
-
 #timeline {
 	width: 4%;
 	margin-left: 5%;
 }
+
+/*Time-line specific - but Jonathans*/
+.section2 {
+    height: auto !important;
+    /*height: 350VH !important;*/
+    position: relative;
+    overflow: visible !important;
+}
+
+.timeline-text {
+	font-size: 2.7vh;
+	font-weight: 500;
+	font-family: 'IM Fell Double Pica', serif;
+}
+
+.timeline-image {
+
+}
+
 
 .button {
 	text-align: center;
@@ -231,10 +185,6 @@ li.long-line {
 	font-weight: 500;
 	font-family: 'IM Fell Double Pica', serif;
 	position: relative;
-}
-
-.date-info {
-	/*height: 33%;*/
 }
 
 p.blank {

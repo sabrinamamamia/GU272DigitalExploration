@@ -1,32 +1,28 @@
-var viewportWidth = $(window).width()/2;
-var viewportHeight = $(window).height();
-var width = viewportWidth;
-var height = viewportHeight;
-var shuffledPersons;
+var width = $("#routeMapContainer").width();
+var height = $("#routeMapContainer").height();
 
-// D3 Projection
 var projection = d3.geoAlbersUsa()
-    .translate([-25, height * 0.35])           
-    .scale([width*1.35 + height*1.35]);        
+.translate([-10, height/3.5])    // translate to center of screen
+.scale([1800]);          // scale things down so see entire US          
 
 // Define path generator
 var path = d3.geoPath()         
     .projection(projection);
 
 $(document).ready(function() {
-    scaleMap()
+    // scaleMap()
     // Load GeoJSON data and merge with states data
     d3.json("./data/us-se-map.json", function(mapData) {
-        var viewportWidth = $(window).width()/2;
-        var viewportHeight = $(window).height();
-        var width = viewportWidth;
-        var height = viewportHeight;
         var shuffledPersons;
 
-        // D3 Projection
+        var width = $("#routeMapContainer").width();
+        var height = $("#routeMapContainer").height();
+
+        console.log(height) 
+
         projection = d3.geoAlbersUsa()
-            .translate([-25, height * 0.35])             
-            .scale([width*1.35 + height*1.35]);         
+            .translate([-10, height/3.5])    // translate to center of screen
+            .scale([1800]);          // scale things down so see entire US      
 
         // Define path generator
         path = d3.geoPath()         

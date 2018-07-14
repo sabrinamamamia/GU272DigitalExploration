@@ -31,8 +31,8 @@ function scrollToSection(type, id, action) {
 // Full page scroll 
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        sectionsColor: ['#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff'],
-        anchors: ['home', 'gu272Timeline', 'pathways', 'gu272Demographics', 'gu272FamilyTrees', 'about'],
+        sectionsColor: ['#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff'],
+        anchors: ['home', 'gu272History', 'gu272Passage','pathways', 'gu272Demographics', 'gu272FamilyTrees', 'about'],
         menu: '#menu',
         scrollOverflow: true,
         autoScrolling: false,
@@ -57,18 +57,22 @@ $(document).scroll(function() {
     if (y >= $('#titlePage').height()) {
         $('#header').show();
 
-        if (y < $('#titlePage').height() + $('#history').height()) {
-            $('#heading-bar-subtitle').html("Timeline");
+        if (y < $('#titlePage').height() + $('#historyPage').height()) {
+            $('#heading-bar-subtitle').html("History");
         }
-        else if (y < $('#titlePage').height() + $('#history').height() + $('#pathwaysPage').height()) {
+        else if (y < $('#titlePage').height() + $('#historyPage').height() + $('#passagePage').height()) {
+            $('#heading-bar-subtitle').html("Passage");
+        }
+        else if (y < $('#titlePage').height() + $('#historyPage').height() + 
+            $('#passagePage').height() + $('#pathwaysPage').height()) {
             $('#heading-bar-subtitle').html("Pathways");
         }
-        else if (y < $('#titlePage').height() + $('#history').height() + 
-            $('#pathwaysPage').height() + $('#demographicsPage').height()) {
+        else if (y < $('#titlePage').height() + $('#historyPage').height() + 
+            $('#passagePage').height() + $('#pathwaysPage').height() + $('#demographicsPage').height()) {
             $('#heading-bar-subtitle').html("Demographics");
         }
-        else if (y < $('#titlePage').height() + $('#history').height() + 
-            $('#pathwaysPage').height() + $('#demographicsPage').height() + 
+        else if (y < $('#titlePage').height() + $('#historyPage').height() + 
+            $('#passagePage').height() + $('#pathwaysPage').height() + $('#demographicsPage').height() + 
             $('#familyTreePage').height()) {
             $('#heading-bar-subtitle').html("Family Trees");
         }
@@ -79,30 +83,4 @@ $(document).scroll(function() {
         $('#header').hide();
     }
 
-    // Change selected timeline date on scoll
-    height = $(".page").height()
-    if ($(this).scrollTop() > height  &&
-    $(this).scrollTop() < $('#blank-2').position().top * 1.8) {
-        scrollToSection("timeline", 1, "scroll");
-    } else {
-        $("#date-1").removeClass("selected")
-    }
-    if ($(this).scrollTop() > $('#blank-2').position().top * 2.2 &&
-    $(this).scrollTop() < $('#blank-3').position().top ) {
-        scrollToSection("timeline", 2, "scroll");
-        $(".historic-map").fadeIn()
-    } else {
-        $("#date-2").removeClass("selected")
-    }
-    if ($(this).scrollTop() > $('#blank-3').position().top * 1.1  && 
-        $(this).scrollTop() < $('#blank-4').position().top * 1.2) {
-        scrollToSection("timeline", 3, "scroll");
-    } else {
-        $("#date-3").removeClass("selected")
-    }
-    if ($(this).scrollTop() > $('#blank-4').position().top * 1.3) {
-        scrollToSection("timeline", 4, "scroll");
-    } else {
-        $("#date-4").removeClass("selected")
-    }
 });

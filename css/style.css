@@ -1,18 +1,86 @@
+h1 {
+    font-size: 9vh;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 7px;
+    margin: 10px 10px 10px 10px;
+}
+
+h2 {
+    font-size: 5vh;
+    margin: 0px 0px 0px 0px;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 4vh;
+    letter-spacing: 0.5px;
+}
+
+.figure-caption {
+    font-size: 1.5vh;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+}
+
+.fixed {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    float: left;
+}
+
+.section {
+    background-color: #f4f5f8;
+}
+
 /*Title Page*/
+#cover {
+    background: url(../images/background-blur.jpg);
+    background-size: cover;             /* Adjust size */
+    background-position: center;    /* Adjust position */
+    font-family: "Lato";
+    color: white;
+}
+
+.top {
+    letter-spacing: 2.4px;
+}
+.content {
+    text-align: center;
+    padding-top: 30vh;
+    font-family: 'IM Fell English SC', serif;
+    color: black;
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.1),
+             0px 1px 1px rgba(0,0,0,0.1),
+             0px 1px 1px rgba(0,0,0,0.1);
+}
+
 .title-label {
     font-size: 30px !important;
 }
 .title-header-label {
     font-size: 70px !important;
 }
-/*Time-line specific - but mine*/
-.section2 {
-    height: auto !important;
-    /*height: 350VH !important;*/
-    position: relative;
-    overflow: visible !important;
-}
 /*Header bar*/
+.header-bar {
+    position: fixed;
+    width: 100%;
+    height: 54px;
+    top: 0;
+    z-index: 15;
+    background: #393a3d;
+    display: none;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.06);
+    color: white;
+}
+.header-bar-title {
+    font-size: 32px;
+}
 .heading-container {
     display: inline-block;
     float: left;
@@ -94,3 +162,44 @@ body {
     float: left;
     padding: 10% 5% 10% 10%;
 }
+
+/* Passage Page */
+
+#playButton {
+    flex-shrink: 1; 
+    flex-basis: 100px;
+    font-size: 2vh;
+}
+
+#routeMapColumn {
+    height: 90VH;
+}
+
+/*Large devices (desktops, less than 1200px)*/
+/*@media (max-width: 1199.98px) {
+    #routeMapColumn {
+        height: 90VH;
+    }
+}*/
+
+/*Small devices (landscape phones, less than 768px)*/
+/*@media (max-width: 767.98px) {
+    #routeMapColumn {
+        height: 90VH;
+    }
+}*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+/*@media (max-width: 575.98px) {
+    #routeMapColumn {
+        height: 50VH;
+    }
+}*/
+
+
+/* Large devices (desktops, 992px and up) */
+/*@media (min-width: 992px) {
+    #routeMapColumn {
+        height: 90VH;
+    }
+}*/

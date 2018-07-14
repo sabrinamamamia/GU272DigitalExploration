@@ -99,6 +99,7 @@ function mapMain() {
 
         var imgWidth = 20,
             imgHeight = 24;
+
         plantationSelection
             .append("circle")
             .attr("class", "location plantation-center")
@@ -459,4 +460,5 @@ mapData.getCoordinatesForPath = function(source, destination) { //coordinates to
             [-91.05949, 30.18697]]
     }
 };
+
 mapMain();
