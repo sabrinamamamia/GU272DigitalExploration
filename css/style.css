@@ -171,35 +171,15 @@ body {
     font-size: 2vh;
 }
 
-#routeMapColumn {
-    height: 90VH;
+
+@media screen and (orientation:portrait) {
+    #routeMapColumn {
+        height: 40VH;
+    }
 }
 
-/*Large devices (desktops, less than 1200px)*/
-/*@media (max-width: 1199.98px) {
+@media screen and (orientation:landscape) {
     #routeMapColumn {
         height: 90VH;
     }
-}*/
-
-/*Small devices (landscape phones, less than 768px)*/
-/*@media (max-width: 767.98px) {
-    #routeMapColumn {
-        height: 90VH;
-    }
-}*/
-
-/*Extra small devices (portrait phones, less than 576px)*/
-/*@media (max-width: 575.98px) {
-    #routeMapColumn {
-        height: 50VH;
-    }
-}*/
-
-
-/* Large devices (desktops, 992px and up) */
-/*@media (min-width: 992px) {
-    #routeMapColumn {
-        height: 90VH;
-    }
-}*/
+}

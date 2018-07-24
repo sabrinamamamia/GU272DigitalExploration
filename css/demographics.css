@@ -1,67 +1,23 @@
-#demographics {
-  height: 200%;
-}
-
-/* Pie Chart */
-#pie {
-  padding-top: 10%;
-  padding-left: 15%;
-  top: 15%;
-}
-
-.pie {
-  opacity: 0.9;
-  
-}
-
-.pie-legend {
-  font-size: .7em;
-}
-
-.pie text {
-  font-family: "Verdana";
-  fill: #000;
-}
-
-.pie .name-text{
-  font-size: .8em;
-}
-
-.pie .value-text{
-  font-size: 3em;
-}
-
-/* Bar chart */
-#bar {
-  padding-left: 39%;
-  top: 34%;
-}
-
-.bar { 
-  opacity: 0.85;
-  margin-right: 55px;
-/*  margin-top: 15%*/
-}
-
-.bar:hover {
-  opacity: 1
-}
-
-#scatter {
-  padding-left: 65%;
-  top: 34%;
-}
-
-.fixed-charts {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 30%;
-  width: fit-content;
+.graphContainer {
+  width: 100%;
 }
 
 .chart-title {
-  margin: 0% 50% 2% 0%;
-  float: left;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: calc(15px + 1vh);
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .fixed {
+    position: sticky;
+    top: 30vh;
+  }
+  .big-space {
+    height: 100vh;
+    width: 100%;
+  }
+  .small-space {
+    height: 30vh;
+  }
 }

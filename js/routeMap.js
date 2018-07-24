@@ -2,8 +2,8 @@ var width = $("#routeMapContainer").width();
 var height = $("#routeMapContainer").height();
 
 var projection = d3.geoAlbersUsa()
-.translate([-10, height/3.5])    // translate to center of screen
-.scale([1800]);          // scale things down so see entire US          
+.translate([-22, height/3.5])    // translate to center of screen
+.scale([1.85 * width + 0.9 * height]);          // scale things down so see entire US          
 
 // Define path generator
 var path = d3.geoPath()         
@@ -15,14 +15,20 @@ $(document).ready(function() {
     d3.json("./data/us-se-map.json", function(mapData) {
         var shuffledPersons;
 
-        var width = $("#routeMapContainer").width();
-        var height = $("#routeMapContainer").height();
+        width = $("#routeMapContainer").width();
+        height = $("#routeMapContainer").height();
 
-        console.log(height) 
 
         projection = d3.geoAlbersUsa()
-            .translate([-10, height/3.5])    // translate to center of screen
-            .scale([1800]);          // scale things down so see entire US      
+            .translate([-22, height/3.5])    // translate to center of screen
+            .scale([1.95 * width + 0.95 * height]);          // scale things down so see entire US  
+            // .scale([950])    
+
+            // 460x + 406y = 1200 
+            // 720x + 697y = 2000
+            // 665x + 629y = 1800
+            // 540x + 279y = 950
+            // width*x + height*y = scale. used to empirically find weights
 
         // Define path generator
         path = d3.geoPath()         
@@ -70,6 +76,8 @@ $(document).ready(function() {
 
             var colors = {"Georgetown University": "#41b6c4", "White Marsh": "#2c7fb8", "St. Thomas's Manor": "#253494", "Newtown": "#7fcdbb", "St. Inigoes": "#ffffcc","West Oak Plantation": "#c7e9b4", "Chatham Plantation": "red"}
             var svg = d3.select("#routeMap")
+            width = $("#routeMapContainer").width();
+            height = $("#routeMapContainer").height();
 
             var locations = svg.selectAll('g')
                 .data(plantationData)
@@ -100,8 +108,8 @@ $(document).ready(function() {
 
             var legend = svg.append("g")
                 .attr("class", "map-legend")
-                .attr("width", "50px")
-                .attr("height", "20px")
+                .attr("width", width / 5)
+                .attr("height", height / 4)
                 .attr("transform", function(d) {
                     return "translate(" + projection([-77.787300, 32.671992]) + ")";
                 });
