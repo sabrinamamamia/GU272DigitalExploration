@@ -60,6 +60,7 @@ d3.csv("./data/gu272.csv", function(data) {
 			.attr("transform", "translate(" + (width/2) + "," + (height/2) + ")");
 		var tooltip = d3.select("#pie")
 				.append("div")
+				.attr("id", "demo-tooltip")
 				.attr("class", "tooltip");
 			tooltip.append("div")
 				.attr("class", "gender");

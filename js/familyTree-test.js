@@ -3,8 +3,8 @@ var div = d3.select("body").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
 
-var i = 0,                          //node id increment factor
-    duration = 700;                 //duration of transition
+var i = 0,							//node id increment factor
+    duration = 700;			        //duration of transition
 
 //Load data
 var data = d3.json("./data/filtered-gu272-data.json", function(error, json) {
@@ -176,9 +176,9 @@ var data = d3.json("./data/filtered-gu272-data.json", function(error, json) {
                 // Creates a curved path from parent to the child nodes
                 function diagonal(s, d) {
                     path = `M ${s.y} ${s.x}
-                    C ${(s.y + d.y) / 2} ${s.x},
-                      ${(s.y + d.y) / 2} ${d.x},
-                      ${d.y} ${d.x}`
+		            C ${(s.y + d.y) / 2} ${s.x},
+		              ${(s.y + d.y) / 2} ${d.x},
+		              ${d.y} ${d.x}`
                     return path
                 }
 

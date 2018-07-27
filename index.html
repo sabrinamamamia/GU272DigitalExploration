@@ -165,7 +165,7 @@
                             <div class="timeline-text">
                                 The GU272 were shipped from Maryland to Louisiana to work on two sugar plantations. They were part of a “second middle passage” that sent a million enslaved Americans to the Deep South.
                                 <div class="button">
-                                    <button id="playButton" type="button" class="btn btn-sm btn-primary my-4" onclick="animateMap()">Play Route</button>
+                                    <button id="playButton" type="button" class="btn btn-sm btn-primary my-4 button" onclick="animateMap()">Play Route</button>
                                 </div>
                             </div>
                         </div>
@@ -365,6 +365,12 @@
     <div id="demographicsPage" class="section">
         <div style="width: 100%; height: 54px;">
         </div>
+        <div class="container mx-2 my-5"> 
+            <button type="button" class="btn btn-light button">
+                <img src="images/clicker.svg" style="height: 1.2em; width: 1.2em"></img>
+                Hover/click graphs for more information
+            </button>
+        </div>
         <div class="container h-300">
             <div class="row">
                 <div class="col-lg-4 col-sm-12">
@@ -389,64 +395,91 @@
         </div>
         <div style="height: 30vh"></div>
     </div>
-<!--     <div id="demographicsPage" class="section">
-        <div id="demographics" class="page paginating-page" style="height: 200VH">
-            <div class="heading fixed">
-            </div>
-            <div id="pie" class="fixed-charts"></div>
-            <div id="bar" class="fixed-charts"></div>
-            <div id="scatter" class="fixed-charts"></div>
-        </div>
-    </div> -->
     <div id="familyTreePage" class="section">
-        <div style="width: 100%; height: 54px; background: white;">
+        <div style="width: 100%; height: 54px;">
         </div>
-        <div id="family-tree">
-            <div class="heading fixed">
+        <div class="familyTreePageContainer">
+            <div class="row px-3 py-4">
+                <div class="col">
+                    <button type="button" class="btn btn-light button">
+                        <img src="images/clicker.svg" style="height: 1.2em; width: 1.2em"></img>
+                            Hover/click trees for more information
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="treeContainer"></div>
+                </div>
+                <div class="col-lg-2 col-sm-6" style="padding-left:0px; padding-right:0px">
+                    <div class="treeContainer"></div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="treeContainer"></div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="treeContainer"></div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="treeContainer"></div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="treeContainer"></div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="treeContainer"></div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="treeContainer"></div>
+                </div>
             </div>
         </div>
     </div>
     <div id="aboutPage" class="section">
         <div style="background: #f4f5f8; width: 100%; height: calc(100VH - 54px); margin-top:54px; position: relative">
-            <div class="about-container">
-                <h3>Designed and Built By</h3>
-                <hr>
-                <h4>Sabrina Ma</h4>
-                <p>
-                    Georgetown Slavery Archive Digital Fellow 2018
-                    <br>
-                    Computer Science and Business Administration (COL '18)
-                    <br>
-                    <a href="mailto:slm243@georgetown.edu">Email</a> | 
-                    <a href="https://github.com/sabrinamamamia">Github</a> | 
-                    <a href="https://www.linkedin.com/in/sabrinalma">LinkedIn</a> 
-                </p>
-                </br><br>
-                <h4>Jonathan Gibson</h4>
-                <p> 
-                    American Studies and Computer Science (COL '19)
-                    <br>
-                    <a href="mailto:jeg263@georgetown.edu">Email</a> |
-                    <a href="https://github.com/jeg263">Github</a>
-                </p>
-                <br>
-                <small>Special thanks to <a href="https://gufaculty360.georgetown.edu/s/faculty-profile?netid=ar44">Professor Adam Rothman</a> for the guidance and <a href="http://digitalhumanities.msu.edu/people/sharon-leon/">Professor Sharon Leon</a> for the initial data collection!</small>
-            </div>
-            <div class="about-container">
-                <h3>Learn More</h3>
-                <hr>
-                <ul>
-                    <li><a href="https://www.gu272.net/members/gu272/">GU272 Descendants Association</a></li>
-                    <li><a href="https://slaveryarchive.georgetown.edu/">Georgetown Slavery Archive</a></li>
-                    <li><a href="http://slavery.georgetown.edu/">Slavery, Memory, and Reconciliation</a></li>
-                </ul>
-                <br><br>
-                <h3>Source Code and Data</h3>
-                <hr>
-                <ul>
-                    <li><a href="https://github.com/sabrinamamamia/gtown-slavery-archive">Source Code</a></li>
-                    <li><a href="https://github.com/sabrinamamamia/gtown-slavery-archive/tree/master/website/data">Data</a></li>
-                </ul>
+            <div class="container d-flex h-100">
+                <div class="row justify-content-center align-self-center">
+                    <div class="col-lg-6 col-xs-12 px-5 py-5">
+                        <h3>Designed + Built By</h3>
+                        <hr>
+                        <h4>Sabrina Ma</h4>
+                        <p class="about-text">
+                            Georgetown Slavery Archive Digital Fellow 2018
+                            <br>
+                            Computer Science and Business Administration (COL '18)
+                            <br>
+                            <a href="mailto:slm243@georgetown.edu">Email</a> | 
+                            <a href="https://github.com/sabrinamamamia">Github</a> | 
+                            <a href="https://www.linkedin.com/in/sabrinalma">LinkedIn</a> 
+                        </p>
+                        </br><br>
+                        <h4>Jonathan Gibson</h4>
+                        <p class="about-text"> 
+                            American Studies and Computer Science (COL '19)
+                            <br>
+                            <a href="mailto:jeg263@georgetown.edu">Email</a> |
+                            <a href="https://github.com/jeg263">Github</a>
+                        </p>
+                        <br>
+                        <small>Special thanks to <a href="https://gufaculty360.georgetown.edu/s/faculty-profile?netid=ar44">Professor Adam Rothman</a> for the guidance and <a href="http://digitalhumanities.msu.edu/people/sharon-leon/">Professor Sharon Leon</a> for the initial data collection!</small>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 px-5 py-5">
+                        <h3>Learn More</h3>
+                        <hr>
+                        <ul class="about-text">
+                            <li><a href="https://www.gu272.net/members/gu272/">GU272 Descendants Association</a></li>
+                            <li><a href="https://slaveryarchive.georgetown.edu/">Georgetown Slavery Archive</a></li>
+                            <li><a href="http://slavery.georgetown.edu/">Slavery, Memory, and Reconciliation</a></li>
+                        </ul>
+                        <br><br>
+                        <h3>Source Code + Data</h3>
+                        <hr>
+                        <ul class="about-text">
+                            <li><a href="https://github.com/sabrinamamamia/gtown-slavery-archive">Source Code</a></li>
+                            <li><a href="https://github.com/sabrinamamamia/gtown-slavery-archive/tree/master/website/data">Data</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

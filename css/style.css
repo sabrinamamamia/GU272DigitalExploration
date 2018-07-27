@@ -18,6 +18,10 @@ h3 {
     letter-spacing: 0.5px;
 }
 
+h4 {
+    font-size: 3vh;
+}
+
 .figure-caption {
     font-size: 1.5vh;
 }
@@ -163,14 +167,16 @@ body {
     padding: 10% 5% 10% 10%;
 }
 
-/* Passage Page */
+.tooltip {
+    /*margin: 5% 5% 5% 5%;*/
+}
 
-#playButton {
+/* Passage Page */
+.button {
     flex-shrink: 1; 
     flex-basis: 100px;
     font-size: 2vh;
 }
-
 
 @media screen and (orientation:portrait) {
     #routeMapColumn {
@@ -182,4 +188,13 @@ body {
     #routeMapColumn {
         height: 90VH;
     }
+}
+
+/* About Page */
+.about-text { 
+    font-size: 2vh;
+}
+
+small {
+    font-size: 1.5vh;
 }
