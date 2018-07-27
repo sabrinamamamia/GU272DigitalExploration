@@ -74,7 +74,7 @@ d3.csv("./data/gu272.csv", function(data) {
 		      .attr("class", "arc");
 		 	var path = g.append("path")
 		 		.attr("d", arc)
-		 		.style("fill", (d,i) => pieColor(i))
+		 		.style("fill", function(d, i) { return pieColor(i);})
 		 		.style("opacity", opacity)
 		  	.style("stroke", "white")
 		  	.style("stroke-width", "5px")
@@ -110,12 +110,12 @@ d3.csv("./data/gu272.csv", function(data) {
 			legend.append("rect")
 				.attr("width", legendRectSize)
 				.attr("height", legendRectSize)
-				.style("fill", (d,i) => pieColor(i))
-				.style("stroke", (d,i) => pieColor(i))
+				.style("fill", function(d, i) { return pieColor(i);})
+				.style("stroke", function(d, i) { return pieColor(i);})
 			legend.append("text")
 				.attr("x", legendRectSize + legendSpacing)
 				.attr("y", legendRectSize - legendSpacing)
-				.text(d => `${d.gender} - ${d.percent}%`)
+				.text(function(d) {return `${d.gender} - ${d.percent}%`})
 				.style("font-size", titleSize);
 
 		// Bar Chart
@@ -152,7 +152,8 @@ d3.csv("./data/gu272.csv", function(data) {
 		  .attr("width", x.bandwidth())
 		  .attr("y", function(d) { return y(d.percent); })
 		  .attr("height", function(d) { return barHeight - y(d.percent); })
-		  .attr("fill", (d,i) => barColor(i))
+		  .style("fill", function(d, i) { return barColor(i);})
+
 		  .style("opacity", opacity);
 
 		svg.append("g")
