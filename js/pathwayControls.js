@@ -263,7 +263,7 @@ function controllerMain() {
 
         //Family filter
         var familyCSVData = csvJSON(chord.originalData).map(function(p) {p.id = Number(p.id); return p;});
-        var familyIds = (familyCSVData.filter(function (p) { return p.full_name === familySearchTerm }))[0];
+        var familyIds = (familyCSVData.filter(function (p) { return p.last_name === familySearchTerm }))[0];
         var familyArray = (familyIds) ? family.findFamilySetForId(familyIds.id) : [];
 
         var directFamilyLineFilter = function (p) {
@@ -294,7 +294,11 @@ function controllerMain() {
     function setFilterControlVariables() { //set intial filter variables
         //typeahead family filter
         csvData = csvJSON(chord.originalData).map(function(p) {p.id = Number(p.id); return p;});
-        var names = csvData.map(function(p) {return p.full_name});
+        var names = csvData.map(function(p) {return p.last_name}).reduce(function(p,c,i,a){
+                if (p.indexOf(c) == -1) p.push(c);
+                else p.push('')
+                return p;
+            }, []);
         $("#inputFamily").typeahead({ source:names });
 
         //show otherData checkbox
