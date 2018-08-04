@@ -4,6 +4,17 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 
     <title>GU272 Digital Exploration</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123347692-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-123347692-1');
+    </script>
+
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica|IM+Fell+English+SC|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
@@ -24,15 +35,7 @@
     <!--Integration Style Sheets-->
     <link type="text/css" rel="stylesheet" href="./css/style.css"/>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123347692-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-123347692-1');
-    </script>
 </head>
 <body>
 <!--Dependency scripts-->
@@ -191,11 +194,6 @@
     </div>
     <div id="pathwaysPage" class="section">
         <div style="width: 100%; height: 54px; background: white;">
-<!--             <div class="fake-timeline-super-container">
-                <ul class="fake-timeline-container">
-                    <li class="line fake-line"></li>
-                </ul>
-            </div> -->
         </div>
         <div style="background: #f4f5f8; width: 100%; height: calc(100VH - 54px); position: relative">
             <div id="left-container" class="stage-shrink" style="float: left; width: 60%; height: 100%; border-top: 1px #eceef1 solid; overflow: scroll;">
@@ -207,7 +205,7 @@
                     <label id="mapOtherLabel" class="map-other-label hidden-other-label">
                         No buyer data
                     </label>
-                    <div id="mapBox" style="height: 553px; width: 600px; overflow: visible; display: inline-block; position: absolute;margin: auto;top: 0;right: 0;bottom: 0;left: 0;">
+                    <div id="mapBox" style="height: 553px; width: 600px; overflow: visible; display: inline-block; position: absolute;margin: auto;top: 0;right: 0;bottom: 0;wleft: 0;">
                         <div id="pathwaysHistory" class="page" style="width: 100%; height: 1630px;">
                             <div id="pathwaysMap" class="fixed" style="width: 100%; height: 100%; float: left;"></div>
                         </div>
@@ -227,91 +225,104 @@
                 <!--Selector-->
                 <div id="selector-box" style="display: block; margin-bottom: 10px">
                     <div class="btn-group btn-group-toggle visual" data-toggle="buttons">
-                        <label class="btn btn-secondary active visual" style="width: 50%">
+                        <label class="btn btn-sm btn-secondary active visual" style="width: 50%">
                             <input type="radio" name="options" id="chordSelector" autocomplete="off" checked> Roots Wheel
                         </label>
-                        <label id="mapSelectorButton" class="btn btn-secondary visual" style="width: 50%">
+                        <label id="mapSelectorButton" class="btn btn-sm btn-secondary visual" style="width: 50%">
                             <input type="radio" name="options" id="mapSelector" autocomplete="off"> Map
                         </label>
                         <!--Family Trees box - possible addition to visualization-->
-                        <!--<label class="btn btn-secondary visual">-->
+                        <!--<label class="btn btn-sm btn-secondary visual">-->
                         <!--<input type="radio" name="options" id="familySelector" autocomplete="off"> Family Trees-->
                         <!--</label>-->
                     </div>
                 </div>
 
                 <label class="label-header larger-header">Filter Enslaved Persons</label>
-
-                <!--Family-->
-                <label class="label-header">Family:</label>
-                <div class="filter-input-container">
-                    <input id="inputFamily" style="flex-grow: 1" type="text" class="form-control typeahead" data-provide="typeahead">
-                </div>
-                <div class="sub-label" style="margin-top: -5px; display: block; margin-bottom: 5px">(Search for enslaved person and will filter to show people in that slave's family)</div>
-
-                <!--Age-->
-                <label class="label-header">Age:</label>
-                <div class="filter-input-container">
-                    <div class="dropdown input-dropdown" style="flex-grow: 1">
-                        <button class="btn btn-secondary dropdown-toggle input-filter" style="width: 132px" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Greater than
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" id="dropdownOptionEquals" href="#dropdownOptionEqualsPressed">Equals</a>
-                            <a class="dropdown-item" id="dropdownOptionGreaterThan" href="#dropdownOptionGreaterThanPressed">Greater than</a>
-                            <a class="dropdown-item" id="dropdownOptionLessThan" href="#dropdownOptionLessThanPressed">Less than</a>
+                <!-- SM: Added form row and column class to condense control grid -->
+                <div class="form-row">
+                    <div class="col">
+                        <!--Family-->
+                        <label class="label-header">Family:</label>
+                        <div class="filter-input-container">
+                            <input id="inputFamily" style="flex-grow: 1" type="text" class="form-control form-control-sm typeahead" data-provide="typeahead">
                         </div>
+                        <div class="sub-label" style="margin-top: -5px; display: block; margin-bottom: 5px">(Search for enslaved person and will filter to show people in that slave's family)</div>
                     </div>
-                    <input id="inputAge" type="number" style="flex-grow: 1; border-top-left-radius: 0; border-bottom-left-radius: 0" type="text" class="form-control">
-                </div>
 
-                <!--Plantation-->
-                <label class="label-header">Plantation:</label>
-                <div class="filter-input-container">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle input-filter" style="width: 230px" type="button" id="dropdownPlantationButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Any
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownPlantationButton">
-                            <a class="dropdown-item" id="dropdownOptionAnyPlantation" href="#dropdownOptionAnyPlantationPressed">Any</a>
-                            <a class="dropdown-item" id="dropdownOptionWhiteMarsh" href="#dropdownOptionWhiteMarshPressed">White Marsh</a>
-                            <a class="dropdown-item" id="dropdownOptionThomasMonor" href="#dropdownOptionThomasMonorPressed">St. Thomas's Manor</a>
-                            <a class="dropdown-item" id="dropdownOptionSInigoes" href="#dropdownOptionSInigoesPressed">St. Inigoes</a>
-                            <a class="dropdown-item" id="dropdownOptionNewtown" href="#dropdownOptionNewtownPressed">Newtown</a>
+                    <!--Age-->
+                    <div class="col">
+                        <label class="label-header">Age:</label>
+                        <div class="filter-input-container">
+                            <div class="dropdown input-dropdown" style="flex-grow: 1">
+                                <button class="btn btn-sm btn-secondary dropdown-toggle input-filter" style="width: 132px" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Greater than
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" id="dropdownOptionEquals" href="#dropdownOptionEqualsPressed">Equals</a>
+                                    <a class="dropdown-item" id="dropdownOptionGreaterThan" href="#dropdownOptionGreaterThanPressed">Greater than</a>
+                                    <a class="dropdown-item" id="dropdownOptionLessThan" href="#dropdownOptionLessThanPressed">Less than</a>
+                                </div>
+                            </div>
+                            <input id="inputAge" type="number" style="flex-grow: 1; border-top-left-radius: 0; border-bottom-left-radius: 0" type="text" class="form-control form-control-sm">
                         </div>
                     </div>
                 </div>
 
-                <!--Buyer-->
-                <label class="label-header" data-intro='Hello step two!'>Buyer:</label>
-                <div class="filter-input-container">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle input-filter" style="width: 230px" type="button" id="dropdownBuyerButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Any
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownBuyerButton">
-                            <a class="dropdown-item" id="dropdownOptionAnyBuyer" href="#dropdownOptionAnyBuyerPressed">Any</a>
-                            <a class="dropdown-item" id="dropdownOptionJBatey" href="#dropdownOptionJBateyPressed">Jesse Batey</a>
-                            <a class="dropdown-item" id="dropdownOptionHJohnson" href="#dropdownOptionHJohnsonPressed">Henry Johson</a>
-                            <a class="dropdown-item" id="dropdownOptionOtherBuyer" href="#dropdownOptionOtherBuyerPressed">Other</a>
+                <div class="form-row">
+                    <!--Plantation-->
+                    <div class="col-sm-5">                    
+                        <label class="label-header">Plantation:</label>
+                        <div class="filter-input-container">
+                            <div class="dropdown" style="flex-grow: 1">
+                                <button class="btn btn-sm btn-secondary dropdown-toggle input-filter" style="width: 100%" type="button" id="dropdownPlantationButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Any
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownPlantationButton">
+                                    <a class="dropdown-item" id="dropdownOptionAnyPlantation" href="#dropdownOptionAnyPlantationPressed">Any</a>
+                                    <a class="dropdown-item" id="dropdownOptionWhiteMarsh" href="#dropdownOptionWhiteMarshPressed">White Marsh</a>
+                                    <a class="dropdown-item" id="dropdownOptionThomasMonor" href="#dropdownOptionThomasMonorPressed">St. Thomas's Manor</a>
+                                    <a class="dropdown-item" id="dropdownOptionSInigoes" href="#dropdownOptionSInigoesPressed">St. Inigoes</a>
+                                    <a class="dropdown-item" id="dropdownOptionNewtown" href="#dropdownOptionNewtownPressed">Newtown</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!--Buyer-->
+                    <div class="col-sm-4">
+                       <label class="label-header" data-intro='Hello step two!'>Buyer:</label>
+                       <div class="filter-input-container">
+                           <div class="dropdown" style="flex-grow: 1">
+                               <button class="btn btn-sm btn-secondary dropdown-toggle input-filter" style="width: 100%" type="button" id="dropdownBuyerButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   Any
+                               </button>
+                               <div class="dropdown-menu" aria-labelledby="dropdownBuyerButton">
+                                   <a class="dropdown-item" id="dropdownOptionAnyBuyer" href="#dropdownOptionAnyBuyerPressed">Any</a>
+                                   <a class="dropdown-item" id="dropdownOptionJBatey" href="#dropdownOptionJBateyPressed">Jesse Batey</a>
+                                   <a class="dropdown-item" id="dropdownOptionHJohnson" href="#dropdownOptionHJohnsonPressed">Henry Johson</a>
+                                   <a class="dropdown-item" id="dropdownOptionOtherBuyer" href="#dropdownOptionOtherBuyerPressed">Other</a>
+                               </div>
+                           </div>
+                       </div>
+                     </div>
+                     <!--Gender-->
+                     <div class="col-sm-3">
+                       <label class="label-header">Gender:</label>
+                       <div class="filter-input-container">
+                           <div class="dropdown" style="flex-grow: 1">
+                               <button class="btn btn-sm btn-secondary dropdown-toggle input-filter" style="width: 100%" type="button" id="dropdownGenderButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   Any
+                               </button>
+                               <div class="dropdown-menu" aria-labelledby="dropdownGenderButton">
+                                   <a class="dropdown-item" id="dropdownOptionAnyGender" href="#dropdownOptionAnyGenderPressed">Any</a>
+                                   <a class="dropdown-item" id="dropdownOptionMale" href="#dropdownOptionMalePressed">Male</a>
+                                   <a class="dropdown-item" id="dropdownOptionFemale" href="#dropdownOptionFemalePressed">Female</a>
+                               </div>
+                           </div>
+                       </div>
+                     </div>
                 </div>
 
-                <!--Gender-->
-                <label class="label-header">Gender:</label>
-                <div class="filter-input-container">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle input-filter" style="width: 230px" type="button" id="dropdownGenderButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Any
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownGenderButton">
-                            <a class="dropdown-item" id="dropdownOptionAnyGender" href="#dropdownOptionAnyGenderPressed">Any</a>
-                            <a class="dropdown-item" id="dropdownOptionMale" href="#dropdownOptionMalePressed">Male</a>
-                            <a class="dropdown-item" id="dropdownOptionFemale" href="#dropdownOptionFemalePressed">Female</a>
-                        </div>
-                    </div>
-                </div>
                 <!--Katharine Jackson Checkbox - possible addition to visualization-->
                 <!--<div class="form-check" style="margin-bottom: 5px">-->
                 <!--<input type="checkbox" class="form-check-input" id="katharineJacksonCheck">-->
@@ -321,9 +332,9 @@
                 <!--Filter and Select Buttons-->
                 <div class="filter-input-container">
                     <div style="flex-grow: 1"></div>
-                    <!--<input id="inputFamily" style="flex-grow: 1" type="text" class="form-control typeahead" data-provide="typeahead">-->
-                    <button id="resetButton" style="flex-shrink: 1; flex-basis: 100px; margin-left: 10px; border-color: #181818" type="button" class="btn btn-light">Reset</button>
-                    <button id="familyButton" style="flex-shrink: 1; flex-basis: 100px; margin-left: 10px" type="button" class="btn btn-primary">Filter</button>
+                    <!--<input id="inputFamily" style="flex-grow: 1" type="text" class="form-control form-control-sm typeahead" data-provide="typeahead">-->
+                    <button id="resetButton" style="flex-shrink: 1; flex-basis: 100px; margin-left: 10px; border-color: #181818" type="button" class="btn btn-sm btn-light">Reset</button>
+                    <button id="familyButton" style="flex-shrink: 1; flex-basis: 100px; margin-left: 10px" type="button" class="btn btn-sm btn-primary">Filter</button>
                 </div>
 
                 <!--Person Selection Section-->
@@ -333,8 +344,8 @@
                     <!--Enslaved Person-->
                     <label class="label-header">Person:</label>
                     <div class="filter-input-container">
-                        <input id="selectPerson" style="flex-grow: 1" type="text" class="form-control typeahead" data-provide="typeahead">
-                        <button id="selectButton" style="flex-shrink: 1; flex-basis: 100px; margin-left: 10px" type="button" class="btn btn-primary">Select</button>
+                        <input id="selectPerson" style="flex-grow: 1" type="text" class="form-control form-control-sm typeahead" data-provide="typeahead">
+                        <button id="selectButton" style="flex-shrink: 1; flex-basis: 100px; margin-left: 10px" type="button" class="btn btn-sm btn-primary">Select</button>
                     </div>
                     <!--Checkbox-->
                     <div class="form-check" style="margin-bottom: 5px">
