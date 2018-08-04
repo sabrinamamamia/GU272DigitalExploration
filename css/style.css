@@ -171,8 +171,19 @@ body {
     /*margin: 5% 5% 5% 5%;*/
 }
 
+/* History Page */
+.timeline-text {
+    font-size: 2.7vh;
+    font-weight: 500;
+    font-family: 'IM Fell Double Pica', serif;
+}
+
 /* Passage Page */
 .button {
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 700;
+    font-size: 0.7em;
     flex-shrink: 1; 
     flex-basis: 100px;
     font-size: 2vh;
@@ -188,6 +199,12 @@ body {
     #routeMapColumn {
         height: 90VH;
     }
+}
+
+.map-legend {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    font: 11px sans-serif;
 }
 
 /* About Page */

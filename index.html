@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/enjoyhint.css">
 
     <!-- Visualization Style Sheets-->
-    <link type="text/css" rel="stylesheet" href="./css/timeline.css"/>
+    <!-- <link type="text/css" rel="stylesheet" href="./css/timeline.css"/> -->
     <link type="text/css" rel="stylesheet" href="./css/demographics.css"/>
     <link type="text/css" rel="stylesheet" href="./css/slaveTree.css"/>
 
@@ -54,9 +54,6 @@
 <script type="text/javascript" src="./js/familyData.js"></script>
 <script type="text/javascript" src="./js/chordDiagram.js"></script>
 <script type="text/javascript" src="./js/pathwayControls.js"></script>
-
-<!-- Google Analytics script -->
-<script type="text/javascript" src="./js/eventTracker.js"></script>
 
 <div id="fullpage">
     <div id="header" class="header-bar">
@@ -153,7 +150,7 @@
                     <div class="container d-flex h-100">
                         <div class="justify-content-center align-self-center">
                             <figure>
-                                <a href="http://slaveryarchive.georgetown.edu/items/show/1" onclick="trackEvent()">
+                                <a href="http://slaveryarchive.georgetown.edu/items/show/1" id="bill-of-sale">
                                     <img src="images/bill-of-sale.jpg" class="img-fluid" alt="Bill of Sale">
                                 </a>
                             </figure>
@@ -179,7 +176,7 @@
                             <div class="timeline-text">
                                 The GU272 were shipped from Maryland to Louisiana to work on two sugar plantations. They were part of a “second middle passage” that sent a million enslaved Americans to the Deep South.
                                 <div class="button">
-                                    <button id="playButton" type="button" class="btn btn-sm btn-primary my-4 button" onclick="animateMap()">Play Route</button>
+                                    <button id="playButton" type="button" class="btn btn-sm btn-primary my-4 button">Play Route</button>
                                 </div>
                             </div>
                         </div>
@@ -499,6 +496,8 @@
     </div>
 </div>
 
+<!-- Google Analytics script -->
+<script type="text/javascript" src="./js/eventTracker.js"></script>
 <!-- <script type="text/javascript" src="./js/timelineControls.js"></script> -->
 <script type="text/javascript" src="./js/routeMap.js"></script>
 <script type="text/javascript" src="./js/pathwaysMap.js"></script>

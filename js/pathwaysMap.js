@@ -134,6 +134,7 @@ function mapMain() {
         mapData.plantationData = plantationData;
         mapData.plantationSelection = plantationSelection;
     });
+
     mapData.updateMap = function() {
         var colors = ["#FF8000","#0077C5","#FFDC12","#008380","#D52B1E","#53B447"]; //colors for map
         mapSourcePlantation = mapData.mapSourcePlantation;

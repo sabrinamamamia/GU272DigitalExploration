@@ -41,11 +41,6 @@
 	font-family: 'IM Fell Double Pica', serif;
 }
 
-.timeline-image {
-
-}
-
-
 .button {
 	text-align: center;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -151,24 +146,6 @@ li.long-line {
 	background: url(../images/jesuit-map-selected.jpg) no-repeat center;
 	background-size: 75vh;
 	transition: opacity 0.5s ease-in, opacity 0.5s ease-out, background-image 0.5s ease-out;
-}
-
-#bill-of-sale {
-	display: block;
-  width: 10%;
-  height: 10%;
-  margin: -16% 0% 0% 0%;
-}
-
-.bill-of-sale {
-	display: block;
-  width: 100%;
-  height: 100%;
-  margin: -17% 0% 0% 0%;
-	background: url(../images/bill-of-sale.jpg) no-repeat center;
-	background-size: 90%;
-  cursor: pointer;
-	transition: background-image 0.5s ease-in-out;
 }
 
 .selected-location {
