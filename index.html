@@ -55,6 +55,9 @@
 <script type="text/javascript" src="./js/chordDiagram.js"></script>
 <script type="text/javascript" src="./js/pathwayControls.js"></script>
 
+<!-- Google Analytics script -->
+<script type="text/javascript" src="./js/eventTracker.js"></script>
+
 <div id="fullpage">
     <div id="header" class="header-bar">
         <a href="#home" style="color: white; display: inline-block; float: left; margin-left: 20px; height: 100%">
@@ -150,8 +153,8 @@
                     <div class="container d-flex h-100">
                         <div class="justify-content-center align-self-center">
                             <figure>
-                                <a href="http://slaveryarchive.georgetown.edu/items/show/1" onclick="gtag('event', 'click', {'event_category': 'Learn More', 'event_label': 'Bill of Sale Image'});">
-                                <img src="images/bill-of-sale.jpg" class="img-fluid" alt="Bill of Sale">
+                                <a href="http://slaveryarchive.georgetown.edu/items/show/1" onclick="trackEvent()">
+                                    <img src="images/bill-of-sale.jpg" class="img-fluid" alt="Bill of Sale">
                                 </a>
                             </figure>
                             <figcaption class="figure-caption">Article of agreement between Mulledy, Beatty, and Johnson. June 1838, Maryland Province Archives, Booth Family Center for Special Collections, Georgetown University.</figcaption>
