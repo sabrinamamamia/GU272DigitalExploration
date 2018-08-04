@@ -3,17 +3,87 @@ function trackEvent(action, category, label) {
 		'event_category': category, 
 		'event_label': label
 	});
-	console.log("Event tracked")
 }
 
+// History Page 
 $("#bill-of-sale").click(function() {
   trackEvent('click', 'Learn More', 'Bill of Sale Image');
 });
-
+// Passage Page 
 $("#playButton").click(function() {
 	animateMap();
 	trackEvent('click', 'Engagement', 'Passage Play Button');
-})
+});
+// Pathways Page 
+$("#familyButton").click(function() {
+	trackEvent('click', 'Engagement', 'Pathways Filter Button');
+});
+$("#selectButton").click(function() {
+	trackEvent('click', 'Engagement', 'Pathways Select Button');
+});
+$("#bundle").click(function() {
+	trackEvent('click', 'Engagement', 'Roots Wheel');
+});
+$("#bundle").hover(function() {
+	trackEvent('hover', 'Engagement', 'Roots Wheel');
+});
+// Demographics Page 
+$("#pie").click(function() {
+	trackEvent('click', 'Engagement', 'Pie Chart');
+});
+$("#pie").hover(function() {
+	trackEvent('hover', 'Engagement', 'Pie Chart');
+});
+$("#bar").click(function() {
+	trackEvent('click', 'Engagement', 'Bar Chart');
+});
+$("#bar").hover(function() {
+	trackEvent('hover', 'Engagement', 'Bar Chart');
+});
+$("#scatter").click(function() {
+	trackEvent('click', 'Engagement', 'Scatter Chart');
+});
+$("#scatter").hover(function() {
+	trackEvent('hover', 'Engagement', 'Scatter Chart');
+});
+// Tree Page 
+$(".treeContainer").click(function() {
+	trackEvent('click', 'Engagement', 'Tree');
+});
+$(".treeContainer").hover(function() {
+	trackEvent('hover', 'Engagement', 'Tree');
+});
+// About Page 
+$("#sab-email").click(function() {
+	trackEvent('click', 'Learn More', 'Sabrina Email');
+});
+$("#sab-github").click(function() {
+	trackEvent('click', 'Learn More', 'Sabrina Github');
+});
+$("#sab-linkedin").click(function() {
+	trackEvent('click', 'Learn More', 'Sabrina LinkedIn');
+});
+$("#jon-email").click(function() {
+	trackEvent('click', 'Learn More', 'Jonathan Email');
+});
+$("#jon-").click(function() {
+	trackEvent('click', 'Learn More', 'Jonathan Github');
+});
+$("#descendants-website").click(function() {
+	trackEvent('click', 'Learn More', 'GU272 Descendants Association Website');
+});
+$("#gsa-website").click(function() {
+	trackEvent('click', 'Learn More', 'GSA Website');
+});
+$("#slavery-website").click(function() {
+	trackEvent('click', 'Learn More', 'Slavery Memory Reconciliation Website');
+});
+$("#sourcecode").click(function() {
+	trackEvent('click', 'Learn More', 'Source Code');
+});
+$("#data").click(function() {
+	trackEvent('click', 'Learn More', 'Data');
+});
 
 // ga('send', 'event', [eventCategory], [eventAction], [eventLabel], [eventValue], [fieldsObject]);
 
