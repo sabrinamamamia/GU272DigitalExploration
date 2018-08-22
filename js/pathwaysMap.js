@@ -30,18 +30,12 @@ function mapMain() {
             //Width and height of map
             var width = d3.select("#pathwaysHistory")._groups[0][0].clientWidth;
             var height = d3.select("#pathwaysHistory")._groups[0][0].clientHeight;
-
-            console.log("start", width, height);
-
             // Bind the data to the SVG and create one path per GeoJSON feature
             var svg = d3.select("#pathwaysMap")
                 .append("svg")
                 .attr("width", width)
                 .attr("height", height)
                 .attr("class", "map");
-
-            console.log("beg", svg);
-
             svg.selectAll("path")
                 .data(mapData.features)
                 .enter()
@@ -59,9 +53,6 @@ function mapMain() {
                 .style("stroke", "#fff")
                 .style("stroke-width", "1")
                 .style("fill", "#b6babd");
-
-            console.log("path", path);
-
             continueSetup();
         });
     };
@@ -253,7 +244,6 @@ function mapMain() {
                 }
                 // Sample the SVG path uniformly with the specified precision.
                 function samples(path, precision) {
-                    console.log(path);
                     var n = path.getTotalLength(), t = [0], i = 0, dt = precision;
                     while ((i += dt) < n) t.push(i);
                     t.push(n);
