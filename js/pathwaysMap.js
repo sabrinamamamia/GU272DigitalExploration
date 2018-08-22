@@ -73,9 +73,6 @@ function mapMain() {
             plantationData = data;
             plantationData = plantationData.map(function(d) { d.originalName = d.name; d.name = cleanName(d.name); return d}); //get plantation names
             mapSVG = d3.select(".map");
-
-            console.log("map", mapSVG);
-
             plantationSelection = d3.select(".map") //hide anything that is not a plantation (i.e. Georgetown)
                 .selectAll('g')
                 .data(plantationData)
@@ -162,7 +159,7 @@ function mapMain() {
             callD3JSON();
         }
         else {
-            console.log("d3Finished");
+            // console.log("d3Finished");
             var colors = ["#FF8000","#0077C5","#FFDC12","#008380","#D52B1E","#53B447"]; //colors for map
             mapSourcePlantation = mapData.mapSourcePlantation;
             mapDestinationPlantation = mapData.mapDestinationPlantation;
@@ -170,7 +167,7 @@ function mapMain() {
             mapSVG.selectAll("#migrationPath").remove(); //remove old path between source and destination
             mapSVG.selectAll("#migrationPathPortions").remove(); //remove multiple pieces used to construct path between source and destination
 
-            if (mapDestinationPlantation !== "") {
+            if (mapDestinationPlantation != null) {
                 d3.select("#mapOtherLabel").classed("hidden-other-label", true); //hide warning messages
                 d3.select('#noMapData').classed("hidden-other-label", true);
 
@@ -201,23 +198,24 @@ function mapMain() {
                         return "not_plantation";
                     }
                 });
-
-
                 var lineGenerator = d3.line() //start line drawing between two points
                     .curve(d3.curveCardinal);
 
+                // if (mapSourcePlantation != null && mapDestinationPlantation != null) {
                 var points = mapData.getCoordinatesForPath(mapSourcePlantation, mapDestinationPlantation); //get coordinates to draw points thorugh
-
                 points = points.map(function (p) {
                     return projection(p)
-                });
-
-
+                });        
+                
                 //
                 // Draw Gradient line
                 //
-
                 var pathData = lineGenerator(points);
+                // }
+
+
+
+                
 
                 //Gradient line functions
                 // Compute stroke outline for segment p12.
