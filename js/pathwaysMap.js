@@ -145,9 +145,12 @@ function mapMain() {
 
     mapData.updateMap = function() {
 
-        if (d3JsonCalled === false) {
+        if (!d3JsonCalled) {
             console.log("d3false");
             callD3JSON();
+        }
+        else if (mapData.mapSourcePlantation == "" || mapData.mapDestinationPlantation == "") {
+            return;
         }
         else {
             // console.log("d3Finished");
