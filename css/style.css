@@ -171,9 +171,9 @@ body {
     /*margin: 5% 5% 5% 5%;*/
 }
 
-/* History Page */
+/* History and Timeline Page */
 .timeline-text {
-    font-size: 0.5vh;
+    font-size: 2vh;
     font-weight: 500;
     font-family: 'IM Fell Double Pica', serif;
 }
